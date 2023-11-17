@@ -5,10 +5,13 @@ body{
 .list{
   color: white;
   text-decoration: none;
+  font-size: 18px;
+
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #B69B6C;
+  border-bottom: 2px solid;
 }
 
 .navbar-nav :hover{
@@ -32,9 +35,72 @@ body{
   left: 0;
   right: 0;
   width: 100%;
- 
   background-size: cover;
   height: 100vh;
   z-index: -1;
 }
+
+.imagelist {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -14rem;
+
+  gap: 20px;
+}
+.imagenavlist {
+  color:white;
+  text-decoration: none;
+
+}
+
+.list-none{
+  list-style-type: none;
+  padding: 0px;
+  border-bottom: 1px solid;
+  border-bottom-color: white;
+}
+.list-none:hover{
+  color: #B69B6C;
+}
+
+.list-none li a.active{
+  border-bottom: #B69B6C;
+}
+.imagenavlist{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.searchbarborder{
+  border: 1px solid #B69B6C ;
+  border-radius: 10px;
+}
+
+.calendar-icon{
+  color: white;
+}
+.btn{
+  background-color: #B69B6C;
+}
+.form-control::placeholder{
+  color:white
+}
+.form-control{
+  color: white;
+}
+.form-control:focus{
+  color: white;
+}
+.css-rmj9x9-control{
+  color: white;
+}
+
+
+
+
+
 

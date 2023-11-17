@@ -18,7 +18,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
           <div className="d-flex">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+            <ul className="navbar-nav me-auto mb-2 gap-3 mb-lg-0 text-white">
               <li className="nav-item">
                 <NavLink className="nav-link list" exact to="/" activeClassName="active-link">
                   Home
@@ -40,7 +40,7 @@ const Navbar = () => {
             <img src="assets/hatimigold.svg" className="img-fluid h-25 w-25" alt="image" />
           </div>
           <div className="d-flex gap-5">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 gap-3 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link list" to="/blogs" activeClassName="active-link">
                   Blogs

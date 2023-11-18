@@ -53,7 +53,7 @@ const Navbar = () => {
               </li>
             </ul>
             <button className="btn btn-outline" type="submit">
-              Book Now
+              Login
             </button>
           </div>
         </div>

@@ -5,6 +5,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaCalendarAlt, FaHome } from "react-icons/fa";
 import ImageChanger from "./HomeContent/ImageChanger";
+import Gateway from "./HomeContent/Gateway";
+import Tourplaces from "./HomeContent/Tourplaces";
+import Awesome from "./HomeContent/Awesome";
+import Amenities from "./HomeContent/Amenities";
+
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -61,8 +66,8 @@ const Home = () => {
                             styles={{
                               control: (provided) => ({
                                 ...provided,
-                                backgroundColor: 'none', // Change background color here
-                                border: 'none', // Remove the border
+                                backgroundColor: "none", // Change background color here
+                                border: "none", // Remove the border
                               }),
                             }}
                           />
@@ -70,8 +75,8 @@ const Home = () => {
                       </div>
                     </div>
 
-                   {/* Check-in Date */}
-                   <div className="col-lg-2 col-md-3">
+                    {/* Check-in Date */}
+                    <div className="col-lg-2 col-md-3">
                       <div className="search-box-single d-flex align-items-center fs-4 gap-2">
                         <DatePicker
                           selected={checkInDate}
@@ -82,16 +87,18 @@ const Home = () => {
                           placeholderText="Check-in Date"
                           className="form-control date-picker custom-date-picker"
                           wrapperClassName="date-picker-wrapper"
-                          customInput={                           
-                              <input
-                                style={{ backgroundColor: "#071011", border: "none",   }}
-                                placeholder="Check-in Date"
-                                className="form-control"
-                              />
+                          customInput={
+                            <input
+                              style={{
+                                backgroundColor: "#071011",
+                                border: "none",
+                              }}
+                              placeholder="Check-in Date"
+                              className="form-control"
+                            />
                           }
-                         
                         />
-                         <FaCalendarAlt className="calendar-icon" />
+                        <FaCalendarAlt className="calendar-icon" />
                       </div>
                     </div>
 
@@ -106,15 +113,17 @@ const Home = () => {
                           endDate={checkOutDate}
                           minDate={checkInDate}
                           placeholderText="Check-out Date"
-                          
                           className="form-control date-picker custom-date-picker"
                           wrapperClassName="date-picker-wrapper"
-                          customInput={                           
-                              <input
-                                style={{ backgroundColor: "#071011", border: "none",   }}
-                                placeholder="Check-in Date"
-                                className="form-control"
-                              />
+                          customInput={
+                            <input
+                              style={{
+                                backgroundColor: "#071011",
+                                border: "none",
+                              }}
+                              placeholder="Check-in Date"
+                              className="form-control"
+                            />
                           }
                         />
                         <FaCalendarAlt className="calendar-icon" />
@@ -133,15 +142,14 @@ const Home = () => {
                             styles={{
                               control: (provided) => ({
                                 ...provided,
-                               backgroundColor: 'none', // Change background color here
-                                border: 'none', // Remove the border
+                                backgroundColor: "none", // Change background color here
+                                border: "none", // Remove the border
                               }),
                             }}
                           />
                         </div>
                         <FaHome className="home-icon fs-4" />
                       </div>
-                      
                     </div>
 
                     {/* Submit Button */}
@@ -159,6 +167,22 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div>
+            <Gateway />
+          </div>
+
+          <div>
+            <Tourplaces/>
+          </div>
+
+          <div>
+            <Awesome/>
+          </div>
+
+          <div>
+            <Amenities/>
           </div>
         </div>
       </div>

@@ -9,6 +9,9 @@ import Gateway from "./HomeContent/Gateway";
 import Tourplaces from "./HomeContent/Tourplaces";
 import Awesome from "./HomeContent/Awesome";
 import Amenities from "./HomeContent/Amenities";
+import Blogs from "./HomeContent/Blogs";
+import Instagramfeed from "./HomeContent/Instagramfeed";
+import Testimonials from "./HomeContent/Testimonials";
 
 
 const Home = () => {
@@ -43,14 +46,14 @@ const Home = () => {
 
   return (
     <>
-      <div className="banner">
-        <div className="home-background ">
-          <div>
+ 
+        <div className="">
+          <div className="imagechanger">
             <ImageChanger />
           </div>
 
           <div>
-            <div className="searchbar-section  p-3">
+            <div className="searchbar-section imagechanger  p-3">
               <div className="container">
                 <div className="multi-main-search searchbarborder p-5">
                   <div className="row d-flex justify-content-between align-items-center">
@@ -181,11 +184,22 @@ const Home = () => {
             <Awesome/>
           </div>
 
-          <div>
+          <div className="">
             <Amenities/>
           </div>
+
+          <div>
+            <Blogs/>
+          </div>
+          <div>
+            <Instagramfeed/>
+          </div>
+
+          <div>
+            <Testimonials/>
+          </div>
         </div>
-      </div>
+      
     </>
   );
 };

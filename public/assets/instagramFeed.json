@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "type": "homeOneInstagram",
+    "image": [
+      {
+        "id": 1,
+        "image": "assets/images/bg/in1.png"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/bg/in4.png"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/bg/in6.png"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/bg/in2.png"
+      },
+      {
+        "id": 5,
+        "image": "assets/images/bg/in5.png"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "type": "advancherInstagram",
+    "image": [
+      {
+        "id": 1,
+        "image": "assets/images/bg/insta41.png"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/bg/insta42.png"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/bg/insta43.png"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/bg/insta44.png"
+      },
+      {
+        "id": 5,
+        "image": "assets/images/bg/insta45.png"
+      },
+      {
+        "id": 6,
+        "image": "assets/images/bg/insta46.png"
+      }
+    ]
+  },
+
+  {
+    "id": "3",
+    "type": "wildInstagram",
+    "image": [
+      {
+        "id": 1,
+        "image": "assets/images/bg/insta51.png"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/bg/insta52.png"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/bg/insta53.png"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/bg/insta54.png"
+      },
+      {
+        "id": 5,
+        "image": "assets/images/bg/insta55.png"
+      },
+      {
+        "id": 6,
+        "image": "assets/images/bg/insta56.png"
+      }
+    ]
+  }
+]

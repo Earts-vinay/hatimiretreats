@@ -25,17 +25,18 @@ body{
   background-color: #B69B6C;
 }
 
-.banner{
+.imagechanger{
   position: relative;
+  top: -7rem;
+  z-index: -1;
+  background-size: cover;
 }
-
 .home-background {
-  position: absolute;
+  position: relative;
   top: -7rem;
   left: 0;
   right: 0;
   width: 100%;
-  background-size: cover;
   height: 100vh;
   z-index: -1;
 }
@@ -72,7 +73,10 @@ body{
   padding-bottom: 10px;
   gap: 10px;
 }
-
+.searchbar-section{
+  position: relative;
+  top: -17rem;
+}
 .searchbarborder{
   border: 1px solid #B69B6C ;
   border-radius: 10px;
@@ -99,10 +103,7 @@ body{
   color: white;
 }
 
-.searchbar-section{
-  position: relative;
-  top: -10rem;
-}
+
 
 .bgcard{
   background-color: #071011;
@@ -129,6 +130,10 @@ body{
   align-items: center;
 }
 
+.footerlist{
+  text-decoration: none;
+  color: white;
+}
 
 
 

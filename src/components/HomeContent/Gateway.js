@@ -7,7 +7,7 @@ const Gateway = () => {
     <div className="container">
       <div className="row justify-content-center text-center text-white ">
         <div className="col-lg-8">
-          <p>WELCOME TO HATIMI RETREATS</p>
+          <span>WELCOME TO HATIMI RETREATS</span>
           <h1>Gateway of Serenity</h1>
           <div className="paraconternt my-5 mx-3">
             <p>

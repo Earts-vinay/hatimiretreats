@@ -1,8 +1,6 @@
 import React from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import { Card } from "react-bootstrap";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing FontAwesome icons
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Tourplaces = () => {
   const cardData = [
@@ -39,25 +37,27 @@ const Tourplaces = () => {
     // Add more card objects as needed
   ];
 
+
   const responsive = {
-    0: { items: 1 },
-    576: { items: 2 },
-    768: { items: 3 },
-    992: { items: 3 },
-    1200: { items: 3 },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 564 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 564, min: 0 },
+      items: 1,
+    },
   };
 
-  const handlePrev = (e) => {
-    e.preventDefault();
-    carousel.slidePrev();
+  const customCarouselStyle = {
+    "& .react-multi-carousel-item": {
+      width: "300px", // Setting width to 'auto' to remove explicit width
+    },
   };
-
-  const handleNext = (e) => {
-    e.preventDefault();
-    carousel.slideNext();
-  };
-
-  let carousel = null;
 
   return (
     <div className="container">
@@ -68,36 +68,38 @@ const Tourplaces = () => {
           <p>Voluptate exercitation incididunt aliquip deserunt duis aute irure dolor.</p>
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-center px-2">
-        <button onClick={handlePrev} className="arrow-btn">
-          <FaArrowLeft size={24} /> {/* Use FaArrowLeft icon component */}
-        </button>
-        <AliceCarousel
-          responsive={responsive}
-          mouseTracking
-          buttonsDisabled={true}
-          items={cardData.map((card, index) => (
-            <div key={index} className="p-3 my-4 ">
-              <div className="card bgcard">
-                <img className="card-img-top" src={card.imageUrl} alt="Card image cap" />
-                <div className="card-body">
-                  <h5 className="card-title">{card.title}</h5>
-                  <p className="card-text">{card.description}</p>
-                  <a href="#" className="btn eg-btn btn">
-                    View More
-                  </a>
-                </div>
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        removeArrowOnDeviceType={["tablet"]}
+        centerMode={true}
+        centerSlidePercentage={100}
+        containerClass="carousel-container" // Apply custom class for styling
+        customTransition="all .5s"
+        customDot={<></>} // Hide dots if needed
+        customStyle={customCarouselStyle} // Apply custom styles
+      >
+        {cardData.map((card, index) => (
+          <div key={index} className="row p-3 my-4">
+            <div className="card bgcard">
+              <img
+                className="card-img-top"
+                src={card.imageUrl}
+                alt="Card"
+                 // Set the height to 250px for mobile view
+              />
+              <div className="card-body">
+                <h5 className="card-title">{card.title}</h5>
+                <p className="card-text">{card.description}</p>
+                <a href="#" className="btn eg-btn btn">
+                  View More
+                </a>
               </div>
             </div>
-          ))}
-          ref={(el) => (carousel = el)} // Save reference to the carousel
-        />
-        <button onClick={handleNext} className="arrow-btn ">
-          <FaArrowRight size={24} /> {/* Use FaArrowRight icon component */}
-        </button>
-      </div>
-
-     
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

@@ -18,13 +18,13 @@ const Instagramfeed = () => {
   ];
   return (
     <div className="container">
-      <div className="insta text-white">
-        <FaInstagram className="fs-2" /> {/* Instagram Icon */}
+      <div className="insta text-white  align-items-center">
+        <FaInstagram className="fs-2 me-2" /> {/* Instagram Icon */}
         <h2>Instagram Feed</h2>
       </div>
-      <div className="instafeed row my-5">
+      <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-5">
         {cardData.map((card, index) => (
-          <div key={index} className=" w-25 gap-2" style={{ height: "20rem" }}>
+          <div key={index} className="col">
             <img
               className="rounded img-fluid h-100"
               src={card.imgSrc}

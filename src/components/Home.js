@@ -52,11 +52,11 @@ const Home = () => {
             <ImageChanger />
           </div>
 
-          <div>
+          
             <div className="searchbar-section imagechanger  p-3">
               <div className="container">
                 <div className="multi-main-search searchbarborder p-5">
-                  <div className="row d-flex justify-content-between align-items-center">
+                  <div className="row d-flex justify-content-between align-items-center searchbar-mobile">
                     {/* Destination */}
                     <div className="col-lg-3 col-md-3">
                       <div className="search-box-single destination-box">
@@ -141,17 +141,19 @@ const Home = () => {
                             value={selectedOption}
                             onChange={handleRoomChange}
                             options={roomOptions}
+                        
                             placeholder="Room"
                             styles={{
                               control: (provided) => ({
                                 ...provided,
                                 backgroundColor: "none", // Change background color here
                                 border: "none", // Remove the border
+                                color:"white"
                               }),
                             }}
                           />
                         </div>
-                        <FaHome className="home-icon fs-4" />
+                        <FaHome className="home-icon fs-4 text-white" />
                       </div>
                     </div>
 
@@ -170,9 +172,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+ 
 
-          <div>
+          <div className="gateway">
             <Gateway />
           </div>
 

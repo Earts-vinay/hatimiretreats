@@ -45,10 +45,11 @@ const Testimonials = () => {
                               <img
                                 src={`assets/profile.png`}
                                 style={{ width: 50 }}
+                                
                                 alt="image"
                               />
                             </div>
-                            <div className="author-text text-white">
+                            <div className="author-text text-white w-100">
                               <h5>{testimonial.author}</h5>
                               <p className="fs-6 text-white">
                                 {testimonial.designation}

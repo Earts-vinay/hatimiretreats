@@ -64,7 +64,7 @@ const Tourplaces = () => {
       <div className="row text-white">
         <div className="col">
           <span>Have a look</span>
-          <h2>Find Your Desired Places</h2>
+          <h1>Find Your Desired Places</h1>
           <p>Voluptate exercitation incididunt aliquip deserunt duis aute irure dolor.</p>
         </div>
       </div>

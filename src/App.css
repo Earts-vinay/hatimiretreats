@@ -9,6 +9,11 @@ body{
 
 }
 
+h1 {
+  font-family: 'footlight-mt-light-regular';
+
+}
+
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #B69B6C;
   border-bottom: 2px solid;

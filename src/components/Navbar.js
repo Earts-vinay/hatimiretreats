@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+//vinay
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar bg-transparent nav">

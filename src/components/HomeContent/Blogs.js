@@ -28,7 +28,7 @@ const Blogs = () => {
     <div className="container my-5">
       <div className="blogs text-white">
         <span>BLOGS</span>
-        <h2>Our Travel Stories</h2>
+        <h2>Our Travel Stories 123</h2>
         <div className="blog_card justify-content-center row my-5">
           {cardData.map((card, index) => (
             <div key={index} className="card bgcard gap-2" style={{ width: "20rem" }}>

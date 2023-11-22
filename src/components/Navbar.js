@@ -1,20 +1,31 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-//vinay
+
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar bg-transparent nav">
-      <div className="container d-flex justify-content-end">
-        <div className="logo">
+    <nav className="navbar navbar-expand-lg bg-transparent nav">
+      <div className="container">
+        {/* Logo */}
+        <div className="navbar-brand">
           <img src="assets/hatimigold.svg" className="img-fluid h-25 w-25" alt="Hatimi Gold Logo" />
         </div>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        {/* Navbar Toggler */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 gap-3 mb-lg-0 text-white">
+        {/* Navbar Links */}
+        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul className="navbar-nav gap-3">
             <li className="nav-item">
               <NavLink className="nav-link list" exact to="/" activeClassName="active-link">
                 Home
@@ -40,11 +51,12 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
-            <button className="btn btn-outline" type="submit">
-            Login
-          </button>
+            <li className="nav-item">
+              <button className="btn btn-outline" type="submit">
+                Login
+              </button>
+            </li>
           </ul>
-      
         </div>
       </div>
     </nav>

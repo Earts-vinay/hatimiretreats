@@ -9,7 +9,7 @@ const Amenities = () => {
           <div className="counter-single sibling-2 text-center d-flex flex-column hover-border1">
             <div className="counter-icon">
               <img
-                src="assets/bg/StellarReviews.svg"
+                src="assets/bg/outstanding.svg"
                 style={{ width: 65, height: 65 }}
                 alt=""
               />
@@ -31,7 +31,7 @@ const Amenities = () => {
           <div className="counter-single sibling-2 text-center d-flex flex-column hover-border1">
             <div className="counter-icon">
               <img
-                src="assets/bg/Ratings.svg"
+                src="assets/bg/scenic.svg"
                 style={{ width: 65, height: 65 }}
                 alt=""
               />
@@ -53,7 +53,7 @@ const Amenities = () => {
           <div className="counter-single sibling-2  text-center d-flex flex-column hover-border1">
             <div className="counter-icon">
               <img
-                src="assets/bg/Breathtaking.svg"
+                src="assets/bg/complete.svg"
                 style={{ width: 65, height: 65 }}
                 alt=""
               />
@@ -75,7 +75,7 @@ const Amenities = () => {
           <div className="counter-single sibling-2  text-center d-flex flex-column hover-border1">
             <div className="counter-icon">
               <img
-                src="assets/bg/Breathtaking.svg"
+                src="assets/bg/genuine.svg"
                 style={{ width: 65, height: 65 }}
                 alt=""
               />

@@ -1,10 +1,10 @@
 import React from "react";
 import {
   MDBCarousel,
-  MDBCarouselInner,
+
   MDBCarouselItem,
   MDBContainer,
-  MDBIcon,
+
 } from "mdb-react-ui-kit";
 import "../../App.css";
 
@@ -27,12 +27,12 @@ const Testimonials = () => {
 
   return (
     <div className="background-container my-5">
-      <div className="bg-image d-flex align-items-center">
+      <div className="bg-image d-flex align-items-center py-5">
         <div className="container text-white">
           <div className="row">
             <div className="col">
               <span>TESTIMONIALS & REVIEWS</span>
-              <h2 className="display-4">Our Travel Stories</h2>
+              <h1 className="display-4">Our Travel Stories</h1>
               <div className="carousel w-75">
                 <MDBContainer className="">
                   <MDBCarousel className="text-white w-100">

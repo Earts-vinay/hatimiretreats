@@ -20,7 +20,7 @@ const Instagramfeed = () => {
     <div className="container">
       <div className="insta text-white  align-items-center">
         <FaInstagram className="fs-2 me-2" /> {/* Instagram Icon */}
-        <h2>Instagram Feed</h2>
+        <h1>Instagram Feed</h1>
       </div>
       <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-5">
         {cardData.map((card, index) => (

@@ -13,6 +13,12 @@ h1 {
   font-family: 'footlight-mt-light-regular';
 
 }
+h3{
+  font-family: 'footlight-mt-light-regular';
+}
+.display-4{
+  font-family: 'footlight-mt-light-regular';
+}
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #B69B6C;
@@ -36,7 +42,7 @@ h1 {
 
 .imagechanger{
   position: relative;
- top: -7rem;
+ top: -8rem;
   background-size: cover;
 }
 
@@ -115,12 +121,6 @@ h1 {
   overflow: hidden;
 }
 
-.background-container {
-  height: 50vh; /* Set container height to full viewport height */
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
 
 /* App.css */
 .bg-image {

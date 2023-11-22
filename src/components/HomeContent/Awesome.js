@@ -3,7 +3,7 @@ import React from "react";
 const Awesome = () => {
   return (
     <div className="background-container">
-      <div className="bg-image d-flex align-items-center">
+      <div className="bg-image d-flex align-items-center py-5">
         {/* Heading and Description */}
         <div className="container text-white">
           <div className="row">

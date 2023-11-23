@@ -7,7 +7,7 @@ const Awesome = () => {
         {/* Heading and Description */}
         <div className="container text-white">
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <span>WHY WE ARE AWESOME!</span>
               <h2 className="display-4">
                 Experience the never-before trip at our Retreats

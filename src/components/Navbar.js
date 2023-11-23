@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import "../App.css"
 
 const Navbar = () => {
   return (
@@ -52,8 +53,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <button className="btn btn-outline" type="submit">
-                Login
+              <button className=" btn btn-outline-login " type="submit">
+                Book Now
               </button>
             </li>
           </ul>

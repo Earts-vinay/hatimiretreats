@@ -25,7 +25,7 @@ const Gateway = () => {
               home at some point in his life, with Panchgani being the oldest
               and dearest.
             </p>
-            <button type="submit" className="eg-btn btn my-2 ">
+            <button type="submit" className="eg-btn btn btn-searchbar my-2 ">
             know More
           </button>
           </div>

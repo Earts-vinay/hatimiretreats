@@ -105,8 +105,8 @@ const Footer = () => {
                   <form >
             <div className='input-group mb-3'>
               <input type='email' className='form-newsletter text-secondary' placeholder='Your Email' aria-label='Your Email' aria-describedby='button-addon2' />
-              <button className='btn ' type='button' id='button-addon2'>
-                <FaArrowRight className='me-2' /> {/* Right Arrow Icon */}
+              <button className='btn btn-newsletter ' type='button' id='button-addon2'>
+                <FaArrowRight className=' text-white text-center' /> {/* Right Arrow Icon */}
               </button>
             </div>
           </form>

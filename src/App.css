@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "lorin";
+  src: url(../public/assets/fonts/Lorin-Regular.ttf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "footlight";
+  src: url(../public/assets/fonts/FTLTLT.TTF) format("truetype");
+  font-weight: 600;
+}
+
 body{
   background-color: #071011;
 }
@@ -8,17 +20,53 @@ body{
   font-size: 18px;
 
 }
+p{
+  font-family:'lorin'
+}
 
 h1 {
-  font-family: 'footlight-mt-light-regular';
-
+  font-family: 'footlight';
+  font-size:70px;
 }
 h3{
-  font-family: 'footlight-mt-light-regular';
+  font-family: 'footlight';
 }
 .display-4{
-  font-family: 'footlight-mt-light-regular';
+  font-family: 'footlight';
+  font-size:70px;
 }
+span{
+  font-family:'lorin'
+}
+
+.text-gold{
+  color:#B69B6C
+}
+/* Buttons */
+
+.btn-outline-login{
+  border:1px solid #B69B6C; 
+
+  color:white; 
+}
+.btn-outline-login:hover{
+background-color: #B69B6C;
+color:black!important;
+}
+
+.btn-searchbar{
+  background-color:#B69B6C!important;
+  color:black!important;
+}
+
+.eg-btn{
+  background-color:#B69B6C!important;
+  color:black!important;
+}
+.btn-newsletter{
+  border-color:white;
+}
+
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #B69B6C;
@@ -27,13 +75,6 @@ h3{
 
 .navbar-nav :hover{
   color: #B69B6C;
-}
-.btn-outline{
-  border-color: #B69B6C;
-  color: white;
-}
-.btn:hover{
-  background-color: #B69B6C;
 }
 
 .nav{
@@ -44,6 +85,10 @@ h3{
   position: relative;
  top: -8rem;
   background-size: cover;
+}
+.imagechangerbook{
+  position:relative!important;
+  top:0rem!important;
 }
 
 .imagelist {
@@ -89,6 +134,17 @@ h3{
   opacity: 30px;
 }
 
+.css-qbdosj-Input{
+  color: white!important;
+}
+.css-1jqq78o-placeholder{
+  color:white!important;
+  font-size:14px!important;
+}
+.css-1dimb5e-singleValue{
+  color:white!important;
+}
+
 .gateway{
   position: relative;
   top: -7rem;
@@ -98,7 +154,7 @@ h3{
   color: white;
 }
 .btn{
-  background-color: #B69B6C;
+  background-color: transparent;
 }
 .form-control::placeholder{
   color:white
@@ -147,6 +203,12 @@ h3{
   background-color: #071011;
   border: 1px solid white;
   border-radius: 10px;
+}
+
+
+/* Bookings */
+.bookings{
+  position:"relative";
 }
 
 

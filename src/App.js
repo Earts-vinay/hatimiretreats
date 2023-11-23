@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Destination from "./components/Destination";
 import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
+import Bookings from "./components/Bookings";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/locations" element={<Locations />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/bookings" element={<Bookings />} />
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -3,7 +3,7 @@ import "../../App.css";
 import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FaCalendarAlt, FaHome } from "react-icons/fa";
+import { FaCalendarAlt, FaHome, FaUserCircle  } from "react-icons/fa";
 
 import { NavLink } from 'react-router-dom';
 
@@ -156,7 +156,7 @@ function SearchBar(props){
                             }}
                           />
                         </div>
-                        <FaHome className="home-icon fs-4 text-white" />
+                        <FaHome className="home-icon fs-4 text-gold" />
                       </div>
                     </div>
 
@@ -179,7 +179,7 @@ function SearchBar(props){
                         }}
                       />
                     </div>
-                    <FaHome className="home-icon fs-4 text-white" />
+                    < FaUserCircle  className="home-icon fs-4 text-gold" />
                   </div>
                 </div>
 
@@ -189,8 +189,8 @@ function SearchBar(props){
                         <button 
                           className="eg-btn btn btn-searchbar "
                         >
-                        <NavLink className="nav-link list" to="/bookings">
-                        {props.check==='home'?'Book Now':'Update Search'}
+                        <NavLink className="nav-link" to="/bookings">
+                        {props.check==='home'?'Search':'Update Search'}
                         </NavLink>  
                           
                         </button>

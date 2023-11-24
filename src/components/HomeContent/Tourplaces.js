@@ -8,31 +8,31 @@ const Tourplaces = () => {
       title: "Matheran",
       description:
         "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tourimage1.png", // Replace with actual image URL
+      imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Lonavala",
       description:
         "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tourimage1.png", // Replace with actual image URL
+      imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Panchgani",
       description:
         "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tourimage1.png", // Replace with actual image URL
+      imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Mount Abu",
       description:
         "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tourimage1.png", // Replace with actual image URL
+      imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Dummas",
       description:
         "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tourimage1.png", // Replace with actual image URL
+      imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     // Add more card objects as needed
   ];
@@ -70,7 +70,7 @@ const Tourplaces = () => {
       </div>
       <Carousel
         responsive={responsive}
-        autoPlay={true}
+      
         autoPlaySpeed={3000}
         removeArrowOnDeviceType={["tablet"]}
         centerMode={true}

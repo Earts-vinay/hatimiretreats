@@ -28,6 +28,9 @@ h1 {
   font-family: 'footlight';
   font-size:70px;
 }
+h2 {
+  font-family: 'footlight';
+}
 h3{
   font-family: 'footlight';
 }
@@ -151,7 +154,7 @@ color:black!important;
 }
 
 .calendar-icon{
-  color: white;
+  color: #B69B6C;
 }
 .btn{
   background-color: transparent;
@@ -209,6 +212,53 @@ color:black!important;
 /* Bookings */
 .bookings{
   position:"relative";
+}
+.panel-body{
+  background-color: #1E2526;
+  
+}
+.dimension{
+  background-color: #292C2C;
+  font-size: 14px;
+}
+.amenities-list{
+  list-style: none;
+  padding: 0;
+
+  font-size: 14px;
+}
+.tags{
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+.tagged_as{
+  margin-top: 20px;
+}
+.otherrooms{
+  background-color: #071011;
+  color: white;
+}
+
+/* Order Details */
+
+.orderform{
+  background-color: #1E2526;
+}
+.orderforminput{
+  width: 90%;
+  border: 1px solid #B69B6C;
+  border-radius: 5px;
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+}
+.orderforminput:focus{
+  border-color: #B69B6C;
 }
 
 

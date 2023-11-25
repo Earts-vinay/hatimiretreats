@@ -260,8 +260,34 @@ color:black!important;
 .orderforminput:focus{
   border-color: #B69B6C;
 }
-
-
+.form-check-input:checked{
+  background-color: #B69B6C;
+    border-color: #B69B6C;
+}
+.card_details{
+  background-color: #1E2526;
+  
+}
+.payment_card{
+  border: 0;
+}
+.payment_form{
+  border: 1px solid #606565;
+  border-radius: 5px;
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+}
+.payment_form::placeholder{
+  color:#4A4F4F
+}
+.form-group{
+  display: grid;
+  gap: 10px;
+  margin-bottom: .8rem;
+}
 @media only screen and (max-width: 600px) {
   .searchbar-section{
     

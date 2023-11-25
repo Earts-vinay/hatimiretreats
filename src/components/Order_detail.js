@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import Choose_Payment from "./Order_detailContent/Choose_Payment";
 
 const Order_detail = () => {
   // State for registration form inputs
@@ -27,6 +28,8 @@ const Order_detail = () => {
     }
   };
 
+
+ 
 
 
   return (
@@ -81,7 +84,7 @@ const Order_detail = () => {
               <label htmlFor="nameInput" className="form-label text-white">Name</label>
               <input
                 type="text"
-                className="form-control bg-transparent"
+                className="form-control bg-transparent  payment_form  payment_form"
                 id="nameInput"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -92,7 +95,7 @@ const Order_detail = () => {
               <label htmlFor="emailInput" className="form-label text-white">Email</label>
               <input
                 type="email"
-                className="form-control bg-transparent"
+                className="form-control bg-transparent  payment_form"
                 id="emailInput"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -103,7 +106,7 @@ const Order_detail = () => {
               <label htmlFor="mobileInput" className="form-label text-white">Mobile Number</label>
               <input
                 type="text"
-                className="form-control bg-transparent"
+                className="form-control bg-transparent  payment_form"
                 id="mobileInput"
                 value={mobileNumber}
                 onChange={(e) => setMobileNumber(e.target.value)}
@@ -114,7 +117,7 @@ const Order_detail = () => {
               <label htmlFor="gstInput" className="form-label text-white">GST Number</label>
               <input
                 type="text"
-                className="form-control bg-transparent"
+                className="form-control bg-transparent  payment_form"
                 id="gstInput"
                 value={gstNumber}
                 onChange={(e) => setGstNumber(e.target.value)}
@@ -125,7 +128,7 @@ const Order_detail = () => {
               <label htmlFor="companyInput" className="form-label text-white">Company Name</label>
               <input
                 type="text"
-                className="form-control bg-transparent"
+                className="form-control bg-transparent  payment_form"
                 id="companyInput"
                 value={companyName}
                 onChange={(e) => setCompanyName(e.target.value)}
@@ -155,19 +158,16 @@ const Order_detail = () => {
             <div className="d-flex justify-content-between"><p>Taxes & Service Fees</p> <p>₹753</p></div>
             <div className="d-flex justify-content-between"><p>Hotel GST</p> <p>₹350</p></div>
             <div className="d-flex justify-content-between"><p>Coupon discount</p> <p>₹1245</p></div>
-            <div className="d-flex justify-content-between"><p >Total Amount: </p> <p>${totalAmount}</p></div>
-            
-            
-            
-            
-            
-            
-           
+            <div className="d-flex justify-content-between"><p >Total Amount: </p> <p>₹{totalAmount}</p></div>    
           </div>
-          <div className="d-flex justify-content-between text-white px-3 fs-4"> <p>Payable Amount: </p> <p>${payableAmount}</p></div>
+          <div className="d-flex justify-content-between text-white px-3 fs-4"> <p>Payable Amount: </p> <p>₹{payableAmount}</p></div>
         </div>
       </div>
     </div>
+      </div>
+
+      <div>
+      <Choose_Payment/>
       </div>
     </>
   );

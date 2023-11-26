@@ -14,6 +14,7 @@ import Bookings from "./components/Bookings";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import Order_detail from "./components/Order_detail";
+import Product_detail from "./components/Product_detail";
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bookings" element={<Bookings />} />
+        <Route path="/productdetail" element={<Product_detail />} />
         <Route path="/orderdetail" element={<Order_detail />} />
       </Routes>
       <Footer/>

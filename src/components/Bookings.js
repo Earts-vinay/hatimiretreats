@@ -195,7 +195,7 @@ const Bookings = () => {
                       className="btn btn-round btn-light text-white"
                       type="button"
                     >
-                      View More
+                      <NavLink className="nav-link" to="/productdetail">View Details</NavLink>
                     </button>
                     <button className="eg-btn btn btn-searchbar ">
                       {" "}

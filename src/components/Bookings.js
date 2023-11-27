@@ -117,17 +117,18 @@ const Bookings = () => {
                   </div>
                   <div className="col-md-8 p-3">
                     <h2 className="pro-d-title text-gold">{product.name}</h2>
-                    <p className="text-white d-flex align-items-center">
-                      {product.location}, {<FaLocationDot />} Matheran
+                    <p className="text-white d-flex align-items-center ">
+                    <p className="m-0"> {product.location}</p> <p className="px-2 d-flex align-items-center m-0">{<FaLocationDot />} Matheran</p> 
                     </p>
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
                         {" "}
-                        <p className="d-flex align-content-center">
-                          {" "}
-                          4.6 <FaStar className="text-gold" /> ( 29 ratings ){" "}
-                          Excellent
-                        </p>
+                        <p className="d-flex align-items-center gap-2">
+                        {" "}
+                      <p className="dark p-1 rounded d-flex align-items-center"> 4.6 {" "} <FaStar className="text-gold" /></p> 
+                         <p>( 29 ratings ){" "}
+                        Excellent</p>
+                      </p>
                         <p className="my-2 dimension p-2 rounded-2">
                           Dimension : {product.dimension}
                         </p>

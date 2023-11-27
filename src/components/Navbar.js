@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../App.css"
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Navbar = () => {
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-transparent nav">
       <div className="container">
@@ -13,19 +21,19 @@ const Navbar = () => {
 
         {/* Navbar Toggler */}
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler${isNavOpen ? ' open' : ''}`}
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          onClick={toggleNav}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
+
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div className={`collapse navbar-collapse justify-content-end${isNavOpen ? ' show' : ''}`}>
           <ul className="navbar-nav gap-3">
             <li className="nav-item">
               <NavLink className="nav-link list" exact to="/" activeClassName="active-link">

@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import { ButtonGroup, Button } from 'react-bootstrap';
 
 const ChoosePayment = () => {
   const [paymentMode, setPaymentMode] = useState('creditCard'); // Default payment mode
+  const [selectedOption, setSelectedOption] = useState('payAtHotel'); // Initial selection
 
+  const handleButtonClick = (option) => {
+    setSelectedOption(option);
+  };
+  
   const handlePaymentModeChange = (e) => {
     setPaymentMode(e.target.value);
   };
@@ -21,11 +27,33 @@ const ChoosePayment = () => {
 
       <div className="row">
        
-        <div className="col-md-6 p-3">
-        <div className="my-3">
-          <button className="btn btn-primary mr-2">Pay at Hotel</button>
-          <button className="btn btn-primary">Pay Now</button>
-          </div>
+        <div className="col-md-6 p-3 ">
+          <div className="py-4">
+        <ButtonGroup>
+        <Button
+          style={{
+            backgroundColor: selectedOption === 'payAtHotel' ? '#B69B6C' : '',
+            color: selectedOption === 'payAtHotel' ? '#fff' : '',
+            borderColor:'#2D3232'
+          }}
+          className="hover-red" 
+          onClick={() => handleButtonClick('payAtHotel')}
+        >
+          Pay at Hotel
+        </Button>
+        <Button
+          style={{
+            backgroundColor: selectedOption === 'payNow' ? '#B69B6C' : '',
+            color: selectedOption === 'payNow' ? '#fff' : '',
+            borderColor:'#2D3232'
+          }}
+          className="hover-red" 
+          onClick={() => handleButtonClick('payNow')}
+        >
+          Pay Now
+        </Button>
+      </ButtonGroup>
+      </div>
           <form>
             <div className="form-check">
               <input
@@ -135,11 +163,11 @@ const ChoosePayment = () => {
                   {/* Net Banking input fields */}
                   <div className="form-group">
                     <label htmlFor="bank">Select Bank</label>
-                    <select className="form-control bg-transparent payment_form" id="bank">
+                    <select className=" bg-transparent payment_form text-white " id="bank">
                       {/* Options for banks */}
-                      <option>Bank A</option>
-                      <option>Bank B</option>
-                      <option>Bank C</option>
+                      <option className="bg-dark">Bank A</option>
+                      <option className="bg-dark">Bank B</option>
+                      <option className="bg-dark">Bank C</option>
                     </select>
                   </div>
                   <div className="form-group">
@@ -164,7 +192,7 @@ const ChoosePayment = () => {
               )}
               {/* Add sections for other payment modes */}
 
-              <button className="btn btn-primary mt-3" onClick={handlePayment}>
+              <button className="btn btn-searchbar mt-3" onClick={handlePayment}>
               Pay Total Amount
             </button>
             </div>

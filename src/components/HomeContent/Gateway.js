@@ -6,9 +6,14 @@ const Gateway = () => {
   return (
     <div className="container">
       <div className="row justify-content-center text-center text-white ">
+      
         <div className="col-lg-8">
           <span>WELCOME TO HATIMI RETREATS</span>
-          <h1>Gateway of Serenity</h1>
+          <div className='d-flex justify-content-start align-items-center'>
+        <img src="assets/bg/line.svg" className="img-fluid mx-4" alt="image" />
+        <h1>Gateway of Serenity</h1>
+        </div>
+          
           <div className="paraconternt my-5 mx-3">
             <p>
               Discover the peacefulness and spirituality of Hatimi Retreats

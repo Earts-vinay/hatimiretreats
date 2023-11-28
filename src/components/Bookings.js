@@ -123,13 +123,13 @@ const Bookings = () => {
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
                         {" "}
-                        <p className="d-flex align-items-center gap-2">
+                        <p className="d-flex align-items-center gap-2 m-0">
                         {" "}
-                      <p className="dark p-1 rounded d-flex align-items-center"> 4.6 {" "} <FaStar className="text-gold" /></p> 
+                      <p className="dark p-1 rounded d-flex align-items-center "> 4.6 {" "} <FaStar className="text-gold mx-2" /></p> 
                          <p>( 29 ratings ){" "}
                         Excellent</p>
                       </p>
-                        <p className="my-2 dimension p-2 rounded-2">
+                        <p className="my-0 dimension p-2 rounded-2">
                           Dimension : {product.dimension}
                         </p>
                         <div className="tagged_as  ">
@@ -148,7 +148,7 @@ const Bookings = () => {
                         </div>
                       </div>
 
-                      <div className="col-6 text-white ">
+                      <div className="col-6 booking_amenities text-white ">
                         Offered Amenities
                         <div className="row my-2">
                           <div className="col-6">

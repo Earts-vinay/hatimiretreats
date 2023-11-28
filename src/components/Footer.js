@@ -90,7 +90,7 @@ const Footer = () => {
                 {/* Column for Contact */}
                 <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4 text-white'>
                   <h6 className='text-uppercase fw-bold mb-4'>Get in Touch</h6>
-                  <p className='d-flex'>
+                  <p className='d-flex social_icons_footer'>
             <FaFacebook className='fs-4 me-4' style={{ color: 'white' }} />
             <FaInstagram className='fs-4' style={{ color: 'white' }} />
           </p>
@@ -103,7 +103,7 @@ const Footer = () => {
                   </p>
 
                   <form >
-            <div className='input-group mb-3'>
+            <div className='input-group mb-3 newsletter'>
               <input type='email' className='form-newsletter text-secondary' placeholder='Your Email' aria-label='Your Email' aria-describedby='button-addon2' />
               <button className='btn btn-newsletter ' type='button' id='button-addon2'>
                 <FaArrowRight className=' text-white text-center' /> {/* Right Arrow Icon */}

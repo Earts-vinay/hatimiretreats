@@ -10,33 +10,31 @@ import {
   FaFireExtinguisher,
   FaExclamationTriangle,
 } from "react-icons/fa"; // Import necessary icons
+import { FaLocationDot } from "react-icons/fa6";
 
 const ProductDetail = () => {
   const cardData = [
     {
       title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
+      description: "Zainee Baug ",
       imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
+      description: "Zainee Baug ",
       imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
+      description: "Zainee Baug ",
       imageUrl: "assets/booking_house.png", // Replace with actual image URL
     },
     {
       title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
+      description: "Zainee Baug ",
       imageUrl: "assets/booking_house.png", // Replace with actual image URL
-    },]
+    },
+  ];
 
   // Example array of image objects with URLs and names
   const images = [
@@ -48,11 +46,11 @@ const ProductDetail = () => {
   ];
 
   const reviewItems = [
-    { name: 'Amenities', rating: 4 }, // Example ratings (you can adjust these)
-    { name: 'Communication', rating: 5 },
-    { name: 'Value for Money', rating: 3 },
-    { name: 'Hygiene', rating: 5 },
-    { name: 'Location of Property', rating: 4 },
+    { name: "Amenities", rating: 4 }, // Example ratings (you can adjust these)
+    { name: "Communication", rating: 5 },
+    { name: "Value for Money", rating: 3 },
+    { name: "Hygiene", rating: 5 },
+    { name: "Location of Property", rating: 4 },
   ];
 
   const renderProgressBar = (rating) => {
@@ -74,17 +72,19 @@ const ProductDetail = () => {
   const reviews = [
     {
       id: 1,
-      userName: 'John Doe',
-      date:'11-10-2021',
-      userProfileIcon: 'https://via.placeholder.com/50', // Replace with actual image URL
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo at ante malesuada ultrices.'
+      userName: "John Doe",
+      date: "11-10-2021",
+      userProfileIcon: "https://via.placeholder.com/50", // Replace with actual image URL
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo at ante malesuada ultrices.",
     },
     {
       id: 2,
-      userName: 'Jane Smith',
-      date:'11-10-2021',
-      userProfileIcon: 'https://via.placeholder.com/50', // Replace with actual image URL
-      description: 'Vestibulum et nisi vitae tortor varius eleifend. Proin non bibendum magna, sit amet congue augue.'
+      userName: "Jane Smith",
+      date: "11-10-2021",
+      userProfileIcon: "https://via.placeholder.com/50", // Replace with actual image URL
+      description:
+        "Vestibulum et nisi vitae tortor varius eleifend. Proin non bibendum magna, sit amet congue augue.",
     },
     // Add more reviews as needed
   ];
@@ -178,8 +178,18 @@ const ProductDetail = () => {
   return (
     <div className="container">
       <div className="row">
+        <div className="pt-5 pb-2">
+          <h2 className="text-gold">Room Name/type</h2>
+          <p className="text-white d-flex align-items-center ">
+            <p className="m-0"> Matheran</p>{" "}
+            <p className="px-2 d-flex align-items-center m-0">
+              {<FaLocationDot />} Matheran
+            </p>
+          </p>
+        </div>
         <div className="col-md-6">
           {/* Left side - One Image */}
+
           <div>
             <img
               src={images[0].url}
@@ -328,39 +338,41 @@ const ProductDetail = () => {
 
             {/* Reviews */}
             <div className="my-5">
-      <p>Reviews <FaStar className="text-gold"/> 5.0</p>
-      {reviewItems.map((item, index) => (
-        <div key={index} className="d-flex gap-3 align-items-center">
-          <p>{item.name}</p>
-          
-         <p className="w-25">{renderProgressBar(item.rating)}</p> 
-        </div>
-      ))}
-    </div>
+              <p>
+                Reviews <FaStar className="text-gold" /> 5.0
+              </p>
+              {reviewItems.map((item, index) => (
+                <div key={index} className="d-flex gap-3 align-items-center">
+                  <p>{item.name}</p>
 
-    <div className="row">
-        {reviews.map(review => (
-          <div key={review.id} className="col-md-6">
-            <div className="card mb-3 bg-transparent text-white">
-              <div className="card-body ">
-                <div className="d-flex align-items-center mb-3 gap-3">
-                  <img
-                    src={review.userProfileIcon}
-                    alt="User Profile"
-                    className="rounded-circle mr-3"
-                    style={{ width: '60px', height: '60px' }}
-                  />
-                  <div className="d-flex flex-column align-items-center ">
-                  <h5 className="card-title">{review.userName}</h5>
-                  <p>{review.date}</p>
+                  <p className="w-25">{renderProgressBar(item.rating)}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="row">
+              {reviews.map((review) => (
+                <div key={review.id} className="col-md-6">
+                  <div className="card mb-3 bg-transparent text-white">
+                    <div className="card-body ">
+                      <div className="d-flex align-items-center mb-3 gap-3">
+                        <img
+                          src={review.userProfileIcon}
+                          alt="User Profile"
+                          className="rounded-circle mr-3"
+                          style={{ width: "60px", height: "60px" }}
+                        />
+                        <div className="d-flex flex-column align-items-center ">
+                          <h5 className="card-title">{review.userName}</h5>
+                          <p>{review.date}</p>
+                        </div>
+                      </div>
+                      <p className="card-text">{review.description}</p>
+                    </div>
                   </div>
                 </div>
-                <p className="card-text">{review.description}</p>
-              </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
           </div>
 
           {/* rightside Bookings */}
@@ -512,33 +524,35 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-     
-     {/* Other Rooms */}
 
-     <div className="container">
-      <section>
-        <h1 className="text-white">Other Rooms</h1>
-        <div className="row d-flex flex-nowrap overflow-auto">
-          {cardData.map((card, index) => (
-            <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12 p-3 my-4 gap-3">
-              <div className="card otherrooms gap-3">
-                <img
-                  className="card-img-top"
-                  src={card.imageUrl}
-                  alt="Card"
-                  // Set the height to 250px for mobile view
-                />
-                <div className="card-body">
-                  <h3 className="card-title text-gold">{card.title}</h3>
-                  <p className="card-text">{card.description}</p>
+      {/* Other Rooms */}
+
+      <div className="container">
+        <section>
+          <h1 className="text-white">Other Rooms</h1>
+          <div className="row d-flex flex-nowrap overflow-auto">
+            {cardData.map((card, index) => (
+              <div
+                key={index}
+                className="col-lg-3 col-md-4 col-sm-6 col-12 p-3 my-4 gap-3"
+              >
+                <div className="card otherrooms gap-3">
+                  <img
+                    className="card-img-top"
+                    src={card.imageUrl}
+                    alt="Card"
+                    // Set the height to 250px for mobile view
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title text-gold">{card.title}</h3>
+                    <p className="card-text">{card.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

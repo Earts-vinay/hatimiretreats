@@ -3,7 +3,7 @@ import { ButtonGroup, Button } from 'react-bootstrap';
 
 const ChoosePayment = () => {
   const [paymentMode, setPaymentMode] = useState('creditCard'); // Default payment mode
-  const [selectedOption, setSelectedOption] = useState('payAtHotel'); // Initial selection
+  const [selectedOption, setSelectedOption] = useState('payNow'); // Initial selection
 
   const handleButtonClick = (option) => {
     setSelectedOption(option);
@@ -23,7 +23,11 @@ const ChoosePayment = () => {
     <div className="container orderform p-5 rounded my-3 text-white">
       <div className=""> 
         <p >Choose a Payment method to Pay</p>
-      <p className="text-gold">100% safe & secure payments</p></div>
+        <div className="d-flex align-items-center gap-2">
+        <img src="assets/bg/secure.svg" className="img-fluid" alt="image" />
+        <p className="text-gold m-0">100% safe & secure payments</p></div>
+        </div>
+        
 
       <div className="row">
        
@@ -55,7 +59,7 @@ const ChoosePayment = () => {
       </ButtonGroup>
       </div>
           <form>
-            <div className="form-check">
+            <div className="form-check ">
               <input
                 className="form-check-input"
                 type="radio"
@@ -64,7 +68,10 @@ const ChoosePayment = () => {
                 checked={paymentMode === 'creditCard'}
                 onChange={handlePaymentModeChange}
               />
-              <label className="form-check-label">Credit Card</label>
+              <div className="">
+              <img src="assets/bg/cardicon.svg" className="img-fluid" alt="image" />
+              <label className="form-check-label mx-2">Credit Card</label>
+              </div>
             </div>
         
             <div className="form-check">
@@ -76,7 +83,8 @@ const ChoosePayment = () => {
                 checked={paymentMode === 'upi'}
                 onChange={handlePaymentModeChange}
               />
-              <label className="form-check-label">UPI</label>
+               <img src="assets/bg/upi.svg" className="img-fluid" alt="image" />
+              <label className="form-check-label mx-3"> Pay using UPI</label>
             </div>
             <div className="form-check">
               <input
@@ -87,7 +95,8 @@ const ChoosePayment = () => {
                 checked={paymentMode === 'netBanking'}
                 onChange={handlePaymentModeChange}
               />
-              <label className="form-check-label">Net Banking</label>
+               <img src="assets/bg/netbanking.svg" className="img-fluid" alt="image" />
+              <label className="form-check-label mx-2">Net Banking</label>
             </div>
             {/* Add more payment modes as needed */}
 
@@ -99,7 +108,11 @@ const ChoosePayment = () => {
             <div className="card-body card_details gap-2 d-block">
               {paymentMode === 'creditCard' && (
                 <div>
+                  <div className=" rightcardicon d-flex  align-items-center gap-3 my-2">
+                  <img src="assets/bg/rightcard.svg" className="img-fluid" alt="image" />
                   <p>Add Your Card Details</p>
+                  </div>
+                 
                   {/* Form fields for credit card details */}
                   <div className="form-group">
                     <label htmlFor="cardNumber">Card Number</label>

@@ -7,7 +7,7 @@ import {
 import "./App.css"
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Destination from "./components/Destination";
+
 import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
 import Bookings from "./components/Bookings";
@@ -15,6 +15,8 @@ import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import Order_detail from "./components/Order_detail";
 import Product_detail from "./components/Product_detail";
+import Services from "./components/Services";
+import Destinations from "./components/Destinations";
 const App = () => {
   return (
     <>
@@ -22,8 +24,9 @@ const App = () => {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
+        <Route path="/destinations" element={<Destinations />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bookings" element={<Bookings />} />

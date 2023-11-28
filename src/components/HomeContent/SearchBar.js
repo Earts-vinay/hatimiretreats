@@ -25,7 +25,7 @@ function SearchBar(props){
   ];
 
   const roomOptions = [
-    { value: "1 Room", label: "1 Room" },
+    { value: "Rooms 1 Room", label: "Rooms 1 Room" },
     { value: "2 Rooms", label: "2 Rooms" },
     { value: "3 Rooms", label: "3 Rooms" },
     { value: "4 Rooms", label: "4 Rooms" },
@@ -162,7 +162,7 @@ function SearchBar(props){
 
                     {/* persons */}
                     <div className="col-lg-2 col-md-3">
-                  <div className="search-box-single d-flex align-items-center  gap-2">
+                  <div className="search-box-single d-flex align-items-center justify-content-center gap-2">
                     <div className="searchbox-input">
                       <Select
                         value={selectedPersons}

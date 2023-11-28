@@ -101,7 +101,6 @@ span{
 
 .btn-outline-login{
   border:1px solid #B69B6C; 
-
   color:white; 
 }
 .btn-outline-login:hover{
@@ -233,7 +232,6 @@ color:black!important;
 }
 
 
-/* App.css */
 .bg-image {
   /* Add your background image URL here */
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../public/assets/banner3.png');
@@ -276,7 +274,6 @@ color:black!important;
 .amenities-list{
   list-style: none;
   padding: 0;
-
   font-size: 14px;
 }
 .tags{
@@ -361,6 +358,33 @@ color:black!important;
 .progress-bar{
   background-color: #B69B6C;
 }
+.line{
+  padding-left: 180px;
+
+}
+
+
+
+/* Properties */
+.properties_image_banner{
+  position: relative;
+  top: -8rem;
+}
+
+.properties_banner {
+  /* Add your background image URL here */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../public/assets/banner3.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  top: -7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
   .searchbar-section{
     
@@ -394,6 +418,35 @@ color:black!important;
   }
   .carousel{
     width: 100% !important;
+  }
+  .col-6{
+    width: 100%;
+  }
+  .booking_amenities{
+    margin-top: 20px;
+  }
+  /* product Details */
+  .icon-row{
+    display: flex !important;
+    flex-direction: column; 
+  
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Order Details */
+  .rightcardicon{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Footer */
+  .social_icons_footer{
+    display: flex;
+    justify-content: center;
+  }
+  .newsletter{
+    display: flex;
+    justify-content: center;
   }
   
 }

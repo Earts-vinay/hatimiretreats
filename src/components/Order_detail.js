@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-import Choose_Payment from "./Order_detailContent/Choose_Payment";
+import Choose_Payment from "./Order_detail_Content/Choose_Payment";
+import Guest_Details_form from "./Order_detail_Content/Guest_Details_form";
 
 const Order_detail = () => {
-  // State for registration form inputs
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
-  const [gstNumber, setGstNumber] = useState('');
-  const [companyName, setCompanyName] = useState('');
 
   // State for billing details
   const [coupon, setCoupon] = useState("");
@@ -27,10 +22,6 @@ const Order_detail = () => {
       alert("Invalid coupon code");
     }
   };
-
-
- 
-
 
   return (
     <>
@@ -59,7 +50,7 @@ const Order_detail = () => {
                       {" "}
                       <p className="d-flex align-items-center gap-2">
                         {" "}
-                      <p className="dark p-1 rounded d-flex align-items-center"> 4.6 {" "} <FaStar className="text-gold" /></p> 
+                      <p className="dark p-1 rounded d-flex align-items-center"> 4.6 {" "} <FaStar className="text-gold mx-2" /></p> 
                          <p>( 29 ratings ){" "}
                         Excellent</p>
                       </p>
@@ -76,10 +67,10 @@ const Order_detail = () => {
                         </div>
                         <div className="rooms col-3 border-right text-center">
                             <p>Room</p>
-                            <p>1Room</p>
+                            <p>1 Room</p>
 
                         </div>
-                        <div className="guest col-3 border-right text-center">
+                        <div className="guest col-3  text-center">
                             <p>Guest</p>
                             <p>2A,2C</p>
                         </div>
@@ -98,70 +89,12 @@ const Order_detail = () => {
       <div className="row ">
         {/* Left side: Registration Form */}
         <div className="col-md-6   ">
-         <div className="orderform p-3 rounded">
-         <p className="text-white">Guest Details</p>
-          <form>
-            <div className="mb-3">
-              <label htmlFor="nameInput" className="form-label text-white">Name</label>
-              <input
-                type="text"
-                className="form-control bg-transparent  payment_form  payment_form"
-                id="nameInput"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="emailInput" className="form-label text-white">Email</label>
-              <input
-                type="email"
-                className="form-control bg-transparent  payment_form"
-                id="emailInput"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="mobileInput" className="form-label text-white">Mobile Number</label>
-              <input
-                type="text"
-                className="form-control bg-transparent  payment_form"
-                id="mobileInput"
-                value={mobileNumber}
-                onChange={(e) => setMobileNumber(e.target.value)}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="gstInput" className="form-label text-white">GST Number</label>
-              <input
-                type="text"
-                className="form-control bg-transparent  payment_form"
-                id="gstInput"
-                value={gstNumber}
-                onChange={(e) => setGstNumber(e.target.value)}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="companyInput" className="form-label text-white">Company Name</label>
-              <input
-                type="text"
-                className="form-control bg-transparent  payment_form"
-                id="companyInput"
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
-                required
-              />
-            </div>
-          </form>
-         </div>
+         <Guest_Details_form/>
         </div>
 
         {/* Right side: Billing Details */}
         <div className="col-md-6 orderform p-3 rounded" >
+         <div>
           <p className="text-white px-3">Billing Details</p>
           <div className="mb-3 d-flex p-3"> 
             <input
@@ -182,6 +115,7 @@ const Order_detail = () => {
             <div className="d-flex justify-content-between"><p >Total Amount: </p> <p>₹{totalAmount}</p></div>    
           </div>
           <div className="d-flex justify-content-between text-white px-3 fs-4"> <p>Payable Amount: </p> <p>₹{payableAmount}</p></div>
+        </div>
         </div>
       </div>
     </div>

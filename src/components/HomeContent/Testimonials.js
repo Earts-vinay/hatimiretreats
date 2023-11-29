@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  MDBCarousel,
-
-  MDBCarouselItem,
-  MDBContainer,
-
-} from "mdb-react-ui-kit";
 import "../../App.css";
 
 const Testimonials = () => {
@@ -14,7 +7,7 @@ const Testimonials = () => {
       author: "Mohammed Shabbir Modi",
       designation: "Hatimi Retreats, Matheran",
       quote:
-        "As a traveller in the community, I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
+        "As a traveller in the community, I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth .",
     },
     {
       author: "Modi",
@@ -22,8 +15,31 @@ const Testimonials = () => {
       quote:
         " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
     },
+    {
+      author: "Ravi",
+      designation: "Hatimi, Matheran",
+      quote:
+        " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
+    },
+    {
+      author: "Ramu",
+      designation: "Hatimi, Matheran",
+      quote:
+        " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
+    },
     // Add more testimonials here if needed
   ];
+
+  const testimonialsChunks = testimonials.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / 2);
+
+    if (!resultArray[chunkIndex]) {
+      resultArray[chunkIndex] = [];
+    }
+
+    resultArray[chunkIndex].push(item);
+    return resultArray;
+  }, []);
 
   return (
     <div className="background-container my-5">
@@ -33,35 +49,40 @@ const Testimonials = () => {
             <div className="col">
               <span>TESTIMONIALS & REVIEWS</span>
               <h1 className="display-4">Our Travel Stories</h1>
-              <div className="carousel w-75">
-                <MDBContainer className="">
-                  <MDBCarousel className="text-white w-100">
-                 
-                      {testimonials.map((testimonial, index) => (
-                        <MDBCarouselItem key={index} active={index === 0}>
-                          <div className="testi-author d-flex gap-3 mt-4 ">
-                            {/* Assuming you have an image for each testimonial */}
-                            <div className="image">
-                              <img
-                                src={`assets/profile.png`}
-                                style={{ width: 50 }}
-                                
-                                alt="image"
-                              />
+              <div className="carousel w-100">
+                <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div className="carousel-inner">
+                    {testimonialsChunks.map((chunk, index) => (
+                      <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                        <div className="row">
+                          {chunk.map((testimonial, innerIndex) => (
+                            <div key={innerIndex} className="col-md-6">
+                              <div className="testi-author d-flex gap-3 mt-4 ">
+                                <div className="image">
+                                  {/* Replace 'assets/profile.png' with your image URL */}
+                                  <img src={`assets/profile.png`} style={{ width: 50 }} alt="image" />
+                                </div>
+                                <div className="author-text text-white w-100">
+                                  <p className="m-0">{testimonial.author}</p>
+                                  <p className="testimonial_description text-white m-0">{testimonial.designation}</p>
+                                </div>
+                              </div>
+                              <p className="my-3 w-75">{testimonial.quote}</p>
                             </div>
-                            <div className="author-text text-white w-100">
-                              <h5>{testimonial.author}</h5>
-                              <p className="fs-6 text-white">
-                                {testimonial.designation}
-                              </p>
-                            </div>
-                          </div>
-                          <p>{testimonial.quote}</p>
-                        </MDBCarouselItem>
-                      ))}
-                   
-                  </MDBCarousel>
-                </MDBContainer>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

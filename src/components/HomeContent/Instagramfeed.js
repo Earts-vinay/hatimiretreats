@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram } from "react-icons/fa";
 
 const Instagramfeed = () => {
   const cardData = [
@@ -18,29 +18,28 @@ const Instagramfeed = () => {
   ];
   return (
     <>
-    <div className="container-fluid">
-    <div className='d-flex justify-content-start align-items-center line'>
-        <img src="assets/bg/line.svg" className="img-fluid" alt="image" />
+      <div className="container-fluid">
+        <div className="d-flex justify-content-start align-items-center line">
+          <img src="assets/bg/line.svg" className="img-fluid" alt="image" />
         </div>
-    </div>
-    <div className="container">
-    
-      <div className="insta text-white  align-items-center">
-        <FaInstagram className="fs-1 me-2" /> {/* Instagram Icon */}
-        <h1>Instagram Feed</h1>
       </div>
-      <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3">
-        {cardData.map((card, index) => (
-          <div key={index} className="col">
-            <img
-              className="rounded img-fluid h-100"
-              src={card.imgSrc}
-              alt={`Instagram post ${index + 1}`}
-            />
-          </div>
-        ))}
+      <div className="container">
+        <div className="insta text-white  align-items-center">
+          <FaInstagram className="fs-1 me-2" /> {/* Instagram Icon */}
+          <h1>Instagram Feed</h1>
+        </div>
+        <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3">
+          {cardData.map((card, index) => (
+            <div key={index} className="col">
+              <img
+                className="rounded img-fluid h-100"
+                src={card.imgSrc}
+                alt={`Instagram post ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer text-white ">
         <MDBFooter bgColor='#071011' className='text-center text-white text-lg-start text-muted '>
           {/* Your footer content */}
-          <section className=''>
+          <section className='d-inline'>
             <MDBContainer className='text-center text-md-start mt-5'>
               {/* Rest of your footer content */}
               <MDBRow className='mt-3'>
@@ -114,10 +114,9 @@ const Footer = () => {
                 </MDBCol>
               </MDBRow>
             </MDBContainer>
-          </section>
 
-          {/* Bottom section of the footer */}
-          <div className='text-center p-4 text-white' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+              {/* Bottom section of the footer */}
+          <div className='text-center p-4 text-white d-flex-inline' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
           <p>
                @ 2023{" "} | Privacy Policy | all rights reserved {" "} 
                 <a href="#" className="egns-lab">
@@ -132,6 +131,9 @@ const Footer = () => {
                 </a>
               </p>
           </div>
+          </section>
+
+        
         </MDBFooter>
       </div>
     </footer>

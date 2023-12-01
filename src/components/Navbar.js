@@ -1,18 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import "../App.css"
+import "../App.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Navbar = () => {
-
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isTop = window.scrollY < 100;
+      if (!isTop) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navClass = `navbar navbar-expand-lg${isScrolled ? ' bg-blur' : ' bg-transparent'}  fixed-top`;
+
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent nav">
+    <nav className={navClass}>
       <div className="container">
         {/* Logo */}
         <div className="navbar-brand">
@@ -31,10 +50,10 @@ const Navbar = () => {
           <span></span>
         </button>
 
-
         {/* Navbar Links */}
         <div className={`collapse navbar-collapse justify-content-end${isNavOpen ? ' show' : ''}`}>
           <ul className="navbar-nav gap-3">
+            {/* Your NavLink items */}
             <li className="nav-item">
               <NavLink className="nav-link list" exact to="/" activeClassName="active-link">
                 Home

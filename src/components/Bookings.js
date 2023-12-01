@@ -12,38 +12,9 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import Other_Rooms from "./Product_Detail_content/Other_Rooms";
 
 const Bookings = () => {
-
-  const cardData = [
-    {
-      title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
-      imageUrl: "assets/booking_house.png", // Replace with actual image URL
-    },
-    {
-      title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
-      imageUrl: "assets/booking_house.png", // Replace with actual image URL
-    },
-    {
-      title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
-      imageUrl: "assets/booking_house.png", // Replace with actual image URL
-    },
-    {
-      title: "Oud Executive Suite",
-      description:
-        "Zainee Baug ",
-      imageUrl: "assets/booking_house.png", // Replace with actual image URL
-    },
-   
-    // Add more card objects as needed
-  ];
-
   const amenityIcons = {
     Kitchen: FaUtensils,
     "Air Conditioner": FaSnowflake,
@@ -118,17 +89,22 @@ const Bookings = () => {
                   <div className="col-md-8 p-3">
                     <h2 className="pro-d-title text-gold">{product.name}</h2>
                     <p className="text-white d-flex align-items-center ">
-                    <p className="m-0"> {product.location}</p> <p className="px-2 d-flex align-items-center m-0">{<FaLocationDot />} Matheran</p> 
+                      <p className="m-0"> {product.location}</p>{" "}
+                      <p className="px-2 d-flex align-items-center m-0">
+                        {<FaLocationDot />} Matheran
+                      </p>
                     </p>
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
                         {" "}
                         <p className="d-flex align-items-center gap-2 m-0">
-                        {" "}
-                      <p className="dark p-1 rounded d-flex align-items-center "> 4.6 {" "} <FaStar className="text-gold mx-2" /></p> 
-                         <p>( 29 ratings ){" "}
-                        Excellent</p>
-                      </p>
+                          {" "}
+                          <p className="dark p-1 rounded d-flex align-items-center ">
+                            {" "}
+                            4.6 <FaStar className="text-gold mx-2" />
+                          </p>
+                          <p>( 29 ratings ) Excellent</p>
+                        </p>
                         <p className="my-0 dimension p-2 rounded-2">
                           Dimension : {product.dimension}
                         </p>
@@ -196,12 +172,16 @@ const Bookings = () => {
                       className="btn btn-round btn-light text-white"
                       type="button"
                     >
-                      <NavLink className="nav-link" to="/productdetail">View Details</NavLink>
+                      <NavLink className="nav-link" to="/productdetail">
+                        View Details
+                      </NavLink>
                     </button>
                     <button className="eg-btn btn btn-searchbar ">
                       {" "}
-                      <NavLink className="nav-link" to="/orderdetail"> Book Now</NavLink>
-                     
+                      <NavLink className="nav-link" to="/orderdetail">
+                        {" "}
+                        Book Now
+                      </NavLink>
                     </button>
                   </div>
                 </div>
@@ -209,30 +189,11 @@ const Bookings = () => {
             </div>
           ))}
         </div>
-
+    
+       {/* other Rooms */}
         <div className="container">
-      <section>
-        <h1 className="text-white">Other Rooms</h1>
-        <div className="row d-flex flex-nowrap overflow-auto">
-          {cardData.map((card, index) => (
-            <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12 p-3 my-4 gap-3">
-              <div className="card otherrooms gap-3">
-                <img
-                  className="card-img-top"
-                  src={card.imageUrl}
-                  alt="Card"
-                  // Set the height to 250px for mobile view
-                />
-                <div className="card-body">
-                  <h3 className="card-title text-gold">{card.title}</h3>
-                  <p className="card-text">{card.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+          <Other_Rooms />
         </div>
-      </section>
-    </div>
       </div>
     </>
   );

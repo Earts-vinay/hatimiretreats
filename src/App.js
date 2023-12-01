@@ -22,6 +22,7 @@ const App = () => {
     <>
     <BrowserRouter>
     <Navbar/>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destinations" element={<Destinations />} />
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/productdetail" element={<Product_detail />} />
         <Route path="/orderdetail" element={<Order_detail />} />
       </Routes>
+      </div>
       <Footer/>
       </BrowserRouter>
     </>

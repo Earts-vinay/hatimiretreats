@@ -10,7 +10,7 @@ const Blogs = () => {
     {
       imgSrc: "assets/blog1f.png",
       altText: "Image 2",
-      cardText: "Escape to Serenity",
+      cardText: "Hatimi Retreats Guide",
     },
     {
       imgSrc: "assets/blog2111.png",
@@ -31,14 +31,14 @@ const Blogs = () => {
         <h1>Our Travel Stories </h1>
         <div className="blog_card justify-content-center row my-5">
           {cardData.map((card, index) => (
-            <div key={index} className="card bgcard gap-2" style={{ width: "20rem" }}>
+            <div key={index} className=" homeblogcard bgcard gap-3" >
               <img
-                className="card-img-top h-100"
+                className=" homeblogimage"
                 src={card.imgSrc}
                 alt={card.altText}
               />
               <div className="card-body">
-                <p className="card-text">{card.cardText}</p>
+                <h3 className="text-center mt-3">{card.cardText}</h3>
               </div>
             </div>
           ))}

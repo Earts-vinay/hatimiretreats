@@ -26,7 +26,10 @@ const Other_Rooms = () => {
       
   return (
     <section>
-    <h1 className="text-white">Other Rooms</h1>
+      <div>
+      <h1 className="text-white">Other Rooms</h1>
+      </div>
+    
     <div className="row d-flex flex-nowrap overflow-auto">
       {cardData.map((card, index) => (
         <div

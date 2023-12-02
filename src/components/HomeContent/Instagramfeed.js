@@ -32,7 +32,7 @@ const Instagramfeed = () => {
           {cardData.map((card, index) => (
             <div key={index} className="col">
               <img
-                className="rounded img-fluid h-100"
+                className="rounded img-fluid instafeedcard"
                 src={card.imgSrc}
                 alt={`Instagram post ${index + 1}`}
               />

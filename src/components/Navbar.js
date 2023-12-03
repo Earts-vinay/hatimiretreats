@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../App.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { FaRegUserCircle } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -52,7 +54,7 @@ const Navbar = () => {
 
         {/* Navbar Links */}
         <div className={`collapse navbar-collapse justify-content-end${isNavOpen ? ' show' : ''}`}>
-          <ul className="navbar-nav gap-3">
+          <ul className="navbar-nav gap-3 text-uppercase">
             {/* Your NavLink items */}
             <li className="nav-item">
               <NavLink className="nav-link list" exact to="/" activeClassName="active-link">
@@ -65,8 +67,23 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/location" activeClassName="active-link">
-                Location
+              <NavLink className="nav-link list" to="/services" activeClassName="active-link">
+                Services
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link list" to="/events" activeClassName="active-link">
+               Events
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link list" to="/daypass" activeClassName="active-link">
+               Daypass
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link list" to="/faqs" activeClassName="active-link">
+               Faq's
               </NavLink>
             </li>
             <li className="nav-item">
@@ -74,20 +91,14 @@ const Navbar = () => {
                 Blogs
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link list" to="/services" activeClassName="active-link">
-                Services
-              </NavLink>
-            </li>
+            
             <li className="nav-item">
               <NavLink className="nav-link list" to="/contact" activeClassName="active-link">
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item">
-              <button className=" btn btn-outline-login " type="submit">
-                Book Now
-              </button>
+            <li className="nav-item align-items-center d-flex ">
+              <FaRegUserCircle className='fs-3 text-white'/>
             </li>
           </ul>
         </div>

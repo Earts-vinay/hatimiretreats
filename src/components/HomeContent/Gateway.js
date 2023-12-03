@@ -10,7 +10,7 @@ const Gateway = () => {
         <div className="col-lg-8">
           <span>WELCOME TO HATIMI RETREATS</span>
           <div className='d-flex justify-content-start align-items-center'>
-        <img src="assets/bg/line.svg" className="img-fluid mx-4" alt="image" />
+        <img src="assets/bg/line.svg" className="linehome mx-4" alt="image" />
         <h1>Gateway of Serenity</h1>
         </div>
           

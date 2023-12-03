@@ -11,12 +11,15 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
 import Bookings from "./components/Bookings";
-import Locations from "./components/Locations";
+
 import Footer from "./components/Footer";
 import Order_detail from "./components/Order_detail";
 import Product_detail from "./components/Product_detail";
 import Services from "./components/Services";
 import Destinations from "./components/Destinations";
+import Events from "./components/Events";
+import Daypass from "./components/Daypass";
+import Faqs from "./components/Faqs";
 const App = () => {
   return (
     <>
@@ -26,8 +29,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destinations" element={<Destinations />} />
-        <Route path="/locations" element={<Locations />} />
+        
         <Route path="/services" element={<Services />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/daypass" element={<Daypass/>} />
+        <Route path="/faqs" element={<Faqs />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bookings" element={<Bookings />} />

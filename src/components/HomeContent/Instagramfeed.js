@@ -21,15 +21,15 @@ const Instagramfeed = () => {
      
       <div className="container">
         <div className="insta text-white  align-items-center">
-          <div className="px-5"><FaInstagram className="fs-1 mx-5 " /> {/* Instagram Icon */}</div>
+          <div className="px-5 mobileparagraph"><FaInstagram className="fs-1 mx-5 mobileparagraph " /> {/* Instagram Icon */}</div>
           
           <div className='d-flex justify-content-start align-items-start '>
-        <img src="assets/bg/line.svg" className="img-fluid mx-3 mt-4 pt-3" alt="image" />
+        <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />
         <h1>Instagram Feed</h1>
         </div>
           
         </div>
-        <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-5 mx-5 py-3">
+        <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-5 mx-5 py-3 mobileparagraph">
           {cardData.map((card, index) => (
             <div key={index} className="col">
               <img

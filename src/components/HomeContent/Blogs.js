@@ -27,9 +27,9 @@ const Blogs = () => {
   return (
     <div className="container my-5">
       <div className="blogs text-white">
-        <span className="mx-5 px-5">BLOGS</span>
+        <span className="mx-5 px-5 mobileparagraph">BLOGS</span>
         <div className='d-flex justify-content-start align-items-start '>
-        <img src="assets/bg/line.svg" className="img-fluid mx-3 mt-4 pt-3" alt="image" />
+        <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />
         <h1>Our Travel Stories </h1>
         </div>
         

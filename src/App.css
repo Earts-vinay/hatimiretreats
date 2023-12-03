@@ -392,6 +392,9 @@ background-color: #B08E54 !important;
 .testimonial_description {
   font-size: 13px;
 }
+.textimonialdesc{
+  width: 80%;
+}
 
 /* Instafeed */
 .instafeedcard {
@@ -471,11 +474,26 @@ background-color: #B08E54 !important;
   position: relative;
   top: 15px;
   right: 20px;
+  border-radius: 4px;
 }
 
 .otherrooms {
   background-color: #071011;
   color: white;
+}
+.other-room-carousel-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.otherroomprice{
+  position: relative;
+  top: 15px;
+  right: 10px;
+  border-radius: 5px;
 }
 
 /* Order Details */
@@ -571,7 +589,7 @@ background-color: #B08E54 !important;
 /* Blogs */
 .blog-card {
   width: 442.71px;
-  height: 562px;
+  height: 540px;
 }
 .Blog-title {
   font-size: 18px;
@@ -623,6 +641,42 @@ background-color: #B08E54 !important;
   .carousel {
     width: 100% !important;
   }
+  .carousel-wrapper {
+   
+    padding: 5px;
+}
+.alice-carousel__stage-item{
+  width: 322px;
+}
+
+.tourimage {
+  width: 322px;
+  
+}
+.arrow-btn.prev {
+  position: absolute;
+  left: -20px; /* Adjust the left position as needed */
+  z-index: 1;
+  
+}
+
+.arrow-btn.next {
+  position: absolute;
+  right: -13px; /* Adjust the right position as needed */
+}
+.mobileparagraph{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.blog-background {
+  background-color: #1e2526;
+  color: #fff;
+  width: 22rem;
+  overflow: hidden;
+}
+.textimonialdesc{
+  width: 100%;
+}
   .col-6 {
     width: 100%;
   }
@@ -652,7 +706,7 @@ background-color: #B08E54 !important;
     display: flex;
     justify-content: center;
   }
-  .img-fluid {
+  .linehome {
     display: none;
   }
 }

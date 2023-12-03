@@ -3,7 +3,7 @@ import React from "react";
 const Amenities = () => {
   return (
     <div className="container">
-      <div className="reviews m-4 p-5">
+      <div className="reviews m-4 p-5 mobileparagraph">
         <div className="row d-flex justify-content-center ">
           <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10 my-3">
             <div className="counter-single sibling-2 text-center d-flex flex-column hover-border1">

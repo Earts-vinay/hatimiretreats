@@ -40,15 +40,15 @@ const Blogs = () => {
 
     <div className='container text-white my-5'>
        <div>
-        <p className='text-center fs-2 m-0'>News & Articles</p>
+        <p className='text-center fs-1 m-0'>News & Articles</p>
         <p className='fs-6 text-center'>#1 Blog on theme marketing by Bodrum</p>
        </div>
       <div className='blogs'>
          <div className='container'>
       <div className="row mt-5  ">
         {cardsData.map((card) => (
-          <div key={card.id} className="col-md-4 mb-4">
-            <div className="blog-card text-white blog-background">
+          <div key={card.id} className="col-md-4 mb-4 ">
+            <div className="blog-card text-white blog-background rounded">
               <img src={card.imageUrl} className="blog-card-img-top" alt={`Card ${card.id}`} />
               <div className="card-body p-3">
                 <p className="Blog-title ">{card.title}</p>

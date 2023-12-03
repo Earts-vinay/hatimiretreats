@@ -26,10 +26,11 @@ const Other_Rooms = () => {
       
   return (
     <section>
-      <div>
-      <h1 className="text-white">Other Rooms</h1>
-      </div>
-    
+       <div className='d-flex justify-content-start align-items-center'>
+        <img src="assets/bg/line.svg" className="img-fluid px-3" alt="image" />
+        <h1 className="text-white">Other Rooms</h1>          
+        </div>
+     
     <div className="row d-flex flex-nowrap overflow-auto">
       {cardData.map((card, index) => (
         <div

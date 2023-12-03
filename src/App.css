@@ -82,6 +82,9 @@ span {
 .text-gold {
   color: #b69b6c;
 }
+.text-green{
+  color: #689867;
+}
 .dropdown_border {
   border: 1px solid #3a3e3e;
   border-color: #3a3e3e;
@@ -352,22 +355,18 @@ background-color: #B08E54 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px; /* Adjust margin as needed */
+  padding: 72px; /* Adjust margin as needed */
 }
 
 .arrow-btn {
-  background-color: #fff; /* Adjust button background color */
+  background: none;
   border: none;
   padding: 10px 10px;
   cursor: pointer;
-  border-radius: 60%;
-  transition: background-color 0.3s ease;
+  color: #B08E54;
   margin-top: 30px;
 }
 
-.arrow-btn:hover {
-  background-color: #B08E54; /* Adjust button hover background color */
-}
 
 .arrow-btn.prev {
   position: absolute;
@@ -378,15 +377,15 @@ background-color: #B08E54 !important;
 
 .arrow-btn.next {
   position: absolute;
-  right: 10px; /* Adjust the right position as needed */
+  right: 0px; /* Adjust the right position as needed */
 }
 
 .tourimage {
-  width: 457px;
-  height: 307px;
+  width: 365px;
+  height: 300px;
   border-radius: 15px;
   overflow: hidden;
-  object-fit: contain;
+ 
 }
 
 /* Testimonials */
@@ -397,17 +396,17 @@ background-color: #B08E54 !important;
 /* Instafeed */
 .instafeedcard {
   width: 338px;
-  height: 350px;
+  height: 300px;
 }
 
 /* Home Blog Card */
 .homeblogcard {
-  width: 329px !important;
+  width: 280px !important;
   height: 414px;
 }
 .homeblogimage {
-  width: 329px;
-  height: 350px;
+  width: 268px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -464,13 +463,16 @@ background-color: #B08E54 !important;
 .tags {
   text-decoration: none;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 5px;
   font-size: 14px;
 }
-.tagged_as {
-  margin-top: 20px;
+.bookingprice{
+  position: relative;
+  top: 15px;
+  right: 20px;
 }
+
 .otherrooms {
   background-color: #071011;
   color: white;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 const Testimonials = () => {
   const testimonials = [
     {
@@ -47,14 +47,18 @@ const Testimonials = () => {
         <div className="container text-white">
           <div className="row">
             <div className="col">
-              <span>TESTIMONIALS & REVIEWS</span>
-              <h1 className="display-4">Our Travel Stories</h1>
-              <div className="carousel w-100">
+              <span className="mx-5 px-5">TESTIMONIALS & REVIEWS</span>
+              <div className='d-flex justify-content-start align-items-start '>
+        <img src="assets/bg/line.svg" className="img-fluid mx-3 mt-4 pt-3" alt="image" />
+        <h1 className="display-4">Our Travel Stories</h1>
+        </div>
+              
+              <div className="carousel w-100 ">
                 <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                  <div className="carousel-inner">
+                  <div className="carousel-inner px-5 mx-5">
                     {testimonialsChunks.map((chunk, index) => (
                       <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                        <div className="row">
+                        <div className="row px-5">
                           {chunk.map((testimonial, innerIndex) => (
                             <div key={innerIndex} className="col-md-6">
                               <div className="testi-author d-flex gap-3 mt-4 ">
@@ -75,11 +79,11 @@ const Testimonials = () => {
                     ))}
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    
+                    <FiChevronLeft className="fs-1"/>
                     <span className="visually-hidden">Previous</span>
                   </button>
                   <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    
+                    <FiChevronRight className="fs-1"/>
                     <span className="visually-hidden">Next</span>
                   </button>
                 </div>

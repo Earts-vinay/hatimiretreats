@@ -111,7 +111,7 @@ function SearchBar(props) {
       <div className="container">
         <div className="multi-main-search searchbarborder p-5 row d-flex justify-content-between align-items-center searchbar-mobile">
           {/* Destination */}
-          <div className="col-lg-2 broder-right p-0 ">
+          <div className="col-lg-2 broder-right p-0 text-center">
             <div className="dropdown gap-2 ">
             
               <button
@@ -137,7 +137,7 @@ function SearchBar(props) {
                 {destinationOptions.map((option) => (
                   <li key={option.value}>
                     <button
-                      className="dropdown-item drop-down-li text-white px-5"
+                      className="dropdown-item drop-down-li text-white px-5 mx-2"
                       onClick={() => handleDestinationChange(option)}
                     >
                       {option.label}

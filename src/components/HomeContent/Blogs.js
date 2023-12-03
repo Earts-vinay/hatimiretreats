@@ -27,18 +27,22 @@ const Blogs = () => {
   return (
     <div className="container my-5">
       <div className="blogs text-white">
-        <span>BLOGS</span>
+        <span className="mx-5 px-5">BLOGS</span>
+        <div className='d-flex justify-content-start align-items-start '>
+        <img src="assets/bg/line.svg" className="img-fluid mx-3 mt-4 pt-3" alt="image" />
         <h1>Our Travel Stories </h1>
-        <div className="blog_card justify-content-center row my-5">
+        </div>
+        
+        <div className="blog_card justify-content-center row ">
           {cardData.map((card, index) => (
-            <div key={index} className=" homeblogcard bgcard gap-3" >
+            <div key={index} className=" homeblogcard bgcard " >
               <img
                 className=" homeblogimage"
                 src={card.imgSrc}
                 alt={card.altText}
               />
               <div className="card-body">
-                <h3 className="text-center mt-3">{card.cardText}</h3>
+                <h3 className="text-center mt-4">{card.cardText}</h3>
               </div>
             </div>
           ))}

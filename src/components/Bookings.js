@@ -28,10 +28,10 @@ const Bookings = () => {
   const products = [
     {
       id: 1,
-      name: "Room Name/type",
+      name: "Misk Presidential Suite",
       location: "Maimoon villa ",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. ",
+        "2 Adults with a max capacity of 6 ",
       dimension: "99mx99m | Area :  7000 sq.ft | Height : 3m",
       amenities: [
         "Kitchen",
@@ -42,15 +42,16 @@ const Bookings = () => {
         "Balcony or Patio",
       ],
       tags: ["#Lorem", "#Lorem"],
-      image: "assets/booking_house.png",
+      image: "assets/bookingimg.png",
+      price:"Rs 6500/N"
     },
 
     {
       id: 2,
-      name: "Room Name/type",
+      name: "Oud Executive Suite",
       location: "Maimoon villa",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. ",
+        "2 Adults with a max capacity of 4 ",
       rating: "4.6  ( 29 ratings ) Excellent",
       dimension: "99mx99m | Area :  7000 sq.ft | Height : 3m",
       amenities: [
@@ -62,13 +63,14 @@ const Bookings = () => {
         "Balcony or Patio",
       ],
       tags: ["#Lorem", "#Lorem"],
-      image: "assets/booking_house.png",
+      image: "assets/bookingimg.png",
+      price: "Rs 6500/N"
     },
     // Add more products here if needed
   ];
   return (
     <>
-      <div>
+      <div className="my-3">
         <SearchBar check="bookings" className="bookings" />
       </div>
       <div>
@@ -78,7 +80,8 @@ const Bookings = () => {
               <section className="panel my-5">
                 <div className="panel-body row p-3 rounded">
                   <div className="col-md-4">
-                    <div className="pro-img-details p-3 ">
+                    <div className="pro-img-details px-3 ">
+                      <p className="text-white m-0 dark w-25 p-1 d-flex justify-content-center bookingprice">{product.price}</p>
                       <img
                         src={product.image}
                         className="w-100 rounded"
@@ -87,8 +90,12 @@ const Bookings = () => {
                     </div>
                   </div>
                   <div className="col-md-8 p-3">
+                    <div className="head d-flex justify-content-between mt-3">
                     <h2 className="pro-d-title text-gold">{product.name}</h2>
-                    <p className="text-white d-flex align-items-center ">
+                    <p className="m-0 text-green">Cancellation policy</p>
+                    </div>
+                   
+                    <p className="text-white d-flex align-items-center my-1 ">
                       <p className="m-0"> {product.location}</p>{" "}
                       <p className="px-2 d-flex align-items-center m-0">
                         {<FaLocationDot />} Matheran
@@ -97,23 +104,24 @@ const Bookings = () => {
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
                         {" "}
-                        <p className="d-flex align-items-center gap-2 m-0">
+                        <p className="text-gold my-1">{product.description}</p>
+                        <p className="d-flex align-items-center gap-2 my-2">
                           {" "}
-                          <p className="dark p-1 rounded d-flex align-items-center ">
+                          <p className="dark p-1 rounded d-flex align-items-center m-0 ">
                             {" "}
                             4.6 <FaStar className="text-gold mx-2" />
                           </p>
-                          <p>( 29 ratings ) Excellent</p>
+                          <p className="m-0">( 29 ratings ) Excellent</p>
                         </p>
-                        <p className="my-0 dimension p-2 rounded-2">
+                        <p className="my-2 dimension p-2 rounded-2">
                           Dimension : {product.dimension}
                         </p>
-                        <div className="tagged_as  ">
+                        <div className="tagged_as my-3 ">
                           {product.tags.map((tag, index) => (
-                            <span key={index}>
+                            <span key={index} className="fs-7">
                               <a
                                 rel="tag"
-                                className="text-white tags"
+                                className="text-white tags py-2 fs-7"
                                 href="#/"
                               >
                                 {tag}

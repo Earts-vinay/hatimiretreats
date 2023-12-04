@@ -41,7 +41,7 @@ const Bookings = () => {
         "Free Wireless Internet",
         "Balcony or Patio",
       ],
-      tags: ["#Lorem", "#Lorem"],
+      tags: ["#Lorem Ipsum", "#Lorem Ipsum"],
       image: "assets/bookingimg.png",
       price:"Rs 6500/N"
     },
@@ -62,7 +62,7 @@ const Bookings = () => {
         "Free Wireless Internet",
         "Balcony or Patio",
       ],
-      tags: ["#Lorem", "#Lorem"],
+      tags: ["#Lorem Ipsum", "#Lorem Ipsum"],
       image: "assets/bookingimg.png",
       price: "Rs 6500/N"
     },
@@ -91,11 +91,11 @@ const Bookings = () => {
                   </div>
                   <div className="col-md-8 p-3">
                     <div className="head d-flex justify-content-between mt-3">
-                    <h2 className="pro-d-title text-gold">{product.name}</h2>
+                    <h2 className="pro-d-title text-gold m-0">{product.name}</h2>
                     <p className="m-0 text-green">Cancellation policy</p>
                     </div>
                    
-                    <p className="text-white d-flex align-items-center my-1 ">
+                    <p className="text-white d-flex align-items-center mb-1 ">
                       <p className="m-0"> {product.location}</p>{" "}
                       <p className="px-2 d-flex align-items-center m-0">
                         {<FaLocationDot />} Matheran
@@ -104,7 +104,7 @@ const Bookings = () => {
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
                         {" "}
-                        <p className="text-gold my-1">{product.description}</p>
+                        <p className="text-gold mb-1">{product.description}</p>
                         <p className="d-flex align-items-center gap-2 my-2">
                           {" "}
                           <p className="dark p-1 rounded d-flex align-items-center m-0 ">
@@ -121,12 +121,12 @@ const Bookings = () => {
                             <span key={index} className="fs-7">
                               <a
                                 rel="tag"
-                                className="text-white tags py-2 fs-7"
+                                className="text-white tags px-3 fs-7"
                                 href="#/"
                               >
                                 {tag}
                               </a>
-                              {index !== product.tags.length - 1 && ", "}
+                              {index !== product.tags.length - 1 && " "}
                             </span>
                           ))}
                         </div>

@@ -27,14 +27,14 @@ const Tourplaces = () => {
     {
       title: "Mount Abu",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tour2.png", // Replace with actual image URL
+        "Escape the desert heat and find solace in Mount Abu, Rajasthan's summer capital. This oasis greets visitors with captivating Aravalli mountains, cascading waterfalls, serene lakes, lush forests, ancient temples, and breathtaking scenic spots.  ",
+      imageUrl: "assets/tour4.png", // Replace with actual image URL
     },
     {
-      title: "Dummas",
+      title: "Dumas",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tour1.png", // Replace with actual image URL
+        "Swap your daily office-home routine for a scenic journey to Hatimi Retreats in Dumas. Located amidst women's favorite shopping destinations, textile industries, & renowned jewelry markets in Surat. With its close proximity to the airport, Hatimi Retreats stands out as a unique choice. ",
+      imageUrl: "assets/tour5.png", // Replace with actual image URL
     },
     // Add more card objects as needed
   ];
@@ -97,8 +97,8 @@ const Tourplaces = () => {
                     // Set the height to 250px for mobile view
                   />
                   <div className="card-body my-4">
-                    <h2 className="card-title">{card.title}</h2>
-                    <p className="fs-7 mt-2">{card.description}</p>
+                    <h2 className="card-title text-gold">{card.title}</h2>
+                    <p className="fs-7 mt-2 text-lightwhite">{card.description}</p>
                     <a href="#" className="btn eg-btn btn">
                       View More
                     </a>

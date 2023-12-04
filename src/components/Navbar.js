@@ -34,9 +34,9 @@ const Navbar = () => {
 
   return (
     <nav className={navClass}>
-      <div className="container">
+      <div className="container navbarsize ">
         {/* Logo */}
-        <div className="navbar-brand">
+        <div className="navbar-brand ">
           <img src="assets/hatimigold.svg" className="img-fluid h-25 w-25" alt="Hatimi Gold Logo" />
         </div>
 

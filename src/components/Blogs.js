@@ -1,4 +1,6 @@
 import React from 'react'
+import Instagramfeed from './HomeContent/Instagramfeed';
+import Testimonials from './HomeContent/Testimonials';
 
 const Blogs = () => {
   const cardsData = [
@@ -37,21 +39,21 @@ const Blogs = () => {
 
 
   return (
-
+<>
     <div className='container text-white my-5'>
-       <div>
-        <p className='text-center fs-1 m-0'>News & Articles</p>
+       <div className=''>
+        <h1 className='text-center '>News & Articles</h1>
         <p className='fs-6 text-center'>#1 Blog on theme marketing by Bodrum</p>
        </div>
-      <div className='blogs'>
-         <div className='container'>
-      <div className="row mt-5  ">
+      <div className='blogs  px-5 mx-5 gap-5'>
+         
+      <div className="row mt-5 ">
         {cardsData.map((card) => (
-          <div key={card.id} className="col-md-4 mb-4 ">
-            <div className="blog-card text-white blog-background rounded">
+          <div key={card.id} className="col-md-4 my-4 ">
+            <div className="blog-card text-white blog-background rounded ">
               <img src={card.imageUrl} className="blog-card-img-top" alt={`Card ${card.id}`} />
               <div className="card-body p-3">
-                <p className="Blog-title ">{card.title}</p>
+                <h2 className="Blog-title text-gold">{card.title}</h2>
                 <p className="blog-description">{card.description}</p>
                 <div className=' d-flex justify-content-center mt-4'>
                 <a href="#" className="btn btn-searchbar">
@@ -63,10 +65,17 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+    
+    
       </div>
+      <div className='my-5'>
+      <Instagramfeed/>
       </div>
-    </div>
-   
+      
+      
+      </div>
+      <Testimonials/>
+      </>
   )
 }
 

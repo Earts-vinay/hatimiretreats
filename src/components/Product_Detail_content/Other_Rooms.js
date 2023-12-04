@@ -91,7 +91,11 @@ const Other_Rooms = () => {
                   />
                   <div className="card-body my-4">
                     <h2 className="card-title text-gold">{card.title}</h2>
-                    <p className="fs-7 mt-2 d-flex align-items-center">{card.description} {" "} {<FaLocationDot />} {card.location}</p>
+                    <div className="d-flex align-items-center gap-2 ">
+                    <p className="fs-7 d-flex align-items-center m-0">{card.description} </p>
+                    <p className="m-0 fs-7 d-flex align-items-center">{<FaLocationDot />} {" "} {card.location}</p>
+                    </div>
+                    
                     <p className="d-flex align-items-center  gap-2 my-2">
                           {" "}
                           <p className="dark p-1 rounded d-flex align-items-center justify-content-center m-0 ">

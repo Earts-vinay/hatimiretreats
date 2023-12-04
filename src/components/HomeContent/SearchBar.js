@@ -20,7 +20,7 @@ function SearchBar(props) {
   ];
 
   // Rooms
-  const [roomCount, setRoomCount] = useState(1);
+  const [roomCount, setRoomCount] = useState(0);
   const incrementRoom = () => {
     setRoomCount(roomCount + 1);
   };
@@ -108,8 +108,8 @@ function SearchBar(props) {
         props.check === "home" ? "imagechanger" : "imagechangerbook"
       }  p-3`}
     >
-      <div className="container">
-        <div className="multi-main-search searchbarborder p-5 row d-flex justify-content-between align-items-center searchbar-mobile">
+      <div className="container ">
+        <div className="multi-main-search searchbarborder py-5 mx-5 row d-flex justify-content-between align-items-center searchbar-mobile">
           {/* Destination */}
           <div className="col-lg-2 broder-right p-0 text-center">
             <div className="dropdown gap-2 ">
@@ -183,12 +183,12 @@ function SearchBar(props) {
               <DateRangePicker onApply={handleDateSelect}>
                 <div className="search-box-single d-flex align-items-center justify-content-center gap-2">
                   <div className="d-flex flex-column">
-                    <p className="m-0 text-center mx-3 text-white fs-6">
+                    <p className="m-0 text-center mx-2 text-white fs-6">
                       Check out
                     </p>
                     <input
                       type="text"
-                      className="form-searchbar text-center custom-date-picker"
+                      className="form-searchbar text-center "
                       value={
                         dateRange.endDate
                           ? formattedDate(dateRange.endDate)
@@ -211,15 +211,23 @@ function SearchBar(props) {
           <div className="col-lg-2 broder-right text-white d-flex justify-content-center align-items-center gap-2">
             <div className="dropdown" ref={roomDropdownRef}>
               <button
-                className="btn btn-outline-darkgreen "
+                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-1"
                 type="button"
                 id="roomDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded={roomDropdownOpen ? "true" : "false"}
                 onClick={toggleRoomDropdown}
               >
+                <div className="d-flex flex-column ">
                 <p className="m-0 text-start">Rooms</p>
                 {`Rooms : ${roomCount}`}
+                </div>
+                
+              <img
+              src="assets/bg/roomsearchbar.svg"
+              className="calsearchbar_img "
+              alt="image"
+            />
               </button>
               <ul
                 className={`dropdown-menu darkgreen text-white dropdown_border ${
@@ -253,12 +261,9 @@ function SearchBar(props) {
                 </li>
                 <p className="m-0 max-members">Max 5 rooms</p>
               </ul>
+              
             </div>
-            <img
-              src="assets/bg/roomsearchbar.svg"
-              className="calsearchbar_img"
-              alt="image"
-            />
+       
           </div>
 
           {/* persons */}
@@ -266,14 +271,21 @@ function SearchBar(props) {
             <div className="col d-flex justify-content-center align-items-center gap-2">
               <div className="dropdown text-white" ref={dropdownRef}>
                 <button
-                  className="btn btn-outline-darkgreen "
+                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-2 "
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  <div className="d-flex flex-column ">
                   <p className="m-0 text-start">Guests</p>A - {adults}, C -{" "}
                   {children}
+                  </div>
+                  <img
+                src="assets/bg/guest.svg"
+                className="img-fluid h-50"
+                alt="image"
+              />
                 </button>
                 <ul
                   className="dropdown-menu darkgreen dropdown_border gap-2"
@@ -307,16 +319,12 @@ function SearchBar(props) {
                   <p className="m-0 max-members">Max 4 Guests for a room</p>
                 </ul>
               </div>
-              <img
-                src="assets/bg/guest.svg"
-                className="img-fluid h-50"
-                alt="image"
-              />
+            
             </div>
           </div>
 
           {/* Submit Button */}
-          <div className=" d-flex justify-content-center col-lg-1">
+          <div className={` d-flex justify-content-center ${props.check==="home"?'col-lg-1':'col-lg-2'}`}>
             <div className="main-form-submit ">
               <button className="eg-btn btn btn-searchbar ">
                 <NavLink className="nav-link" to="/bookings">

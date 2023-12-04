@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Instagramfeed from './HomeContent/Instagramfeed'
 const Destinations = () => {
 
   // Sample array of objects containing card information
@@ -8,38 +8,38 @@ const Destinations = () => {
     {
       title: "Matheran",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
+        "Get ready for an exciting journey to Matheran via a scenic route. Along the way to Hatimi Retreats, experience a thrilling toy train ride and embark on a horse ride adventure to visit Hatimi Retreats. Rediscover your inner child with the enchanting charm of Matheran. ",
       imageUrl: "assets/tour1.png", // Replace with actual image URL
     },
     {
       title: "Lonavala",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
+        "Come to the thrilling zip-zap-zoom rides in the fascinating realm of Lonavala. Take a lovely ride around the winding ghat roads, bringing pure delight to hearts. The vast woodlands and grassy landscapes are a mesmerizing setting that promises a fabulous experience. ",
       imageUrl: "assets/tour2.png", // Replace with actual image URL
     },
     {
       title: "Panchgani",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
+        "The mountains and lush landscapes make Panchgani truly exceptional, capturing the hearts of nature lovers. With striking waterfalls, diverse valleys, and the serene lakes, this place is a haven for relaxation. Experience the beauty at Hatimi Retreats in this enchanting location. ",
       imageUrl: "assets/tour3.png", // Replace with actual image URL
     },
     {
       title: "Mount Abu",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tour2.png", // Replace with actual image URL
+        "Escape the desert heat and find solace in Mount Abu, Rajasthan's summer capital. This oasis greets visitors with captivating Aravalli mountains, cascading waterfalls, serene lakes, lush forests, ancient temples, and breathtaking scenic spots.  ",
+      imageUrl: "assets/tour4.png", // Replace with actual image URL
     },
     {
-      title: "Dummas",
+      title: "Dumas",
       description:
-        "Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu. Lorem Ipsum jest standardowym ",
-      imageUrl: "assets/tour1.png", // Replace with actual image URL
+        "Swap your daily office-home routine for a scenic journey to Hatimi Retreats in Dumas. Located amidst women's favorite shopping destinations, textile industries, & renowned jewelry markets in Surat.Hatimi Retreats stands out as a unique choice. ",
+      imageUrl: "assets/tour5.png", // Replace with actual image URL
     },
     // Add more card objects as needed
   ];
   return (
     <>
-    <div className="container-fluid w-100">
+    <div className="container-fluid w-100 m-0">
       {/* Text on Image */}
       <div className="row properties_banner h-100vh ">
       
@@ -61,7 +61,7 @@ const Destinations = () => {
       {/* Cards */}
       <div className='container'>
       <div className="row mt-5  ">
-        <div className="destination d-flex flex-wrap ">
+        <div className="destination d-flex flex-wrap mx-5 px-5 mobileparagraph">
         {cardData.map((card, index) => (
             <div key={index} className="item">
               <div className="row px-3 ">
@@ -73,7 +73,7 @@ const Destinations = () => {
                     
                   />
                   <div className="card-body my-4">
-                    <h2 className="card-title">{card.title}</h2>
+                    <h2 className="card-title text-gold">{card.title}</h2>
                     <p className="fs-7 mt-2">{card.description}</p>
                     <a href="#" className="btn eg-btn btn">
                       View More
@@ -87,7 +87,12 @@ const Destinations = () => {
          
       </div>
       </div>
+     
     </div>
+    <div className='my-5'>
+    <Instagramfeed/>
+    </div>
+    
     </>
   );
 };

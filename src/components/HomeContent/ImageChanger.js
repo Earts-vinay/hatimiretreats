@@ -42,7 +42,7 @@ const ImageChanger = () => {
           <li className="nav-item">
             <a
               href="#"
-              onClick={() => changeImage('assets/banner2.jpg', 'Lonavala')}
+              onClick={() => changeImage('assets/banner1.png', 'Lonavala')}
               className="nav-link imagenavlist"
               style={linkStyle('Lonavala')}
             >

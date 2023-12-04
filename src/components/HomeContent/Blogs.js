@@ -33,7 +33,7 @@ const Blogs = () => {
         <h1>Our Travel Stories </h1>
         </div>
         
-        <div className="blog_card justify-content-center row ">
+        <div className="blog_card justify-content-center row my-3">
           {cardData.map((card, index) => (
             <div key={index} className=" homeblogcard bgcard " >
               <img

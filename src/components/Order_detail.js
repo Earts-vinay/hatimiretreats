@@ -41,8 +41,8 @@ const Order_detail = () => {
                   </div>
                 </div>
                 <div className="col-md-8 p-3">
-                  <h2 className="pro-d-title text-gold">Room Name/type</h2>
-                  <p className="text-white ">
+                  <h2 className="pro-d-title text-gold m-0">Room Name/type</h2>
+                  <p className="text-white mb-1">
                    <p className="m-0">Maimoon villa</p> <p className="d-flex align-items m-0">{<FaLocationDot />} Matheran</p> 
                   </p>
                   <div className="product_meta row">
@@ -50,7 +50,7 @@ const Order_detail = () => {
                       {" "}
                       <p className="d-flex align-items-center gap-2">
                         {" "}
-                      <p className="dark p-1 rounded d-flex align-items-center"> 4.6 {" "} <FaStar className="text-gold mx-2" /></p> 
+                      <p className="dark p-1 rounded d-flex align-items-center justify-content-center px-2"> 4.6 {" "} <FaStar className="text-gold mx-1" /></p> 
                          <p>( 29 ratings ){" "}
                         Excellent</p>
                       </p>
@@ -58,21 +58,21 @@ const Order_detail = () => {
 
                     <div className="row text-white d-flex justify-content-center">
                         <div className="checkin  col-3 border-right text-center">
-                          <p>check in</p>
-                          <p>08 sun 2023</p>
+                          <p className="m-0 ">check in</p>
+                          <p className="m-0">Wed 8th Nov</p>
                         </div>
                         <div className="checkout  col-3 border-right text-center">
-                            <p>check out</p>
-                            <p>09 mon 2023</p>
+                            <p className="m-0">check out</p>
+                            <p className="m-0">Sun 12th Nov</p>
                         </div>
                         <div className="rooms col-3 border-right text-center">
-                            <p>Room</p>
-                            <p>1 Room</p>
+                            <p className="m-0">Room</p>
+                            <p className="m-0">1 Room</p>
 
                         </div>
                         <div className="guest col-3  text-center">
-                            <p>Guest</p>
-                            <p>2A,2C</p>
+                            <p className="m-0">Guest</p>
+                            <p className="m-0">2A,2C</p>
                         </div>
                     </div>
                   </div>

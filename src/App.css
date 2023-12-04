@@ -9,10 +9,22 @@
   src: url(../public/assets/fonts/FTLTLT.TTF) format("truetype");
   font-weight: 600;
 }
+@font-face {
+  font-family: "montserrat";
+  src: url(../public/assets/fonts/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 300;
+}
 
 body {
   background-color: #071011;
   padding-top: 104px;
+}
+.container-fluid{
+  --bs-gutter-x: 0rem;
+  
+}
+.text-lightwhite{
+  color: #999999;
 }
 
 .darkgreen {
@@ -48,11 +60,16 @@ body {
 .navbar-toggler.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+.navbarsize{
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+}
 
 .list {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-family: 'lorin';
+  font-size: 14px;
 }
 p {
   font-family: "lorin";
@@ -80,7 +97,7 @@ span {
 }
 
 .text-gold {
-  color: #b69b6c;
+  color: #B08E54;
 }
 .text-green{
   color: #689867;
@@ -119,21 +136,21 @@ span {
 /* Buttons */
 
 .btn-outline-login {
-  border: 1px solid #b69b6c;
+  border: 1px solid #B08E54;
   color: white;
 }
 .btn-outline-login:hover {
-  background-color: #b69b6c;
+  background-color: #B08E54;
   color: black !important;
 }
 
 .btn-searchbar {
-  background-color: #b69b6c !important;
+  background-color: #B08E54 !important;
   color: black !important;
 }
 
 .eg-btn {
-  background-color: #b69b6c !important;
+  background-color: #B08E54 !important;
   color: black !important;
 }
 .btn-newsletter {
@@ -143,10 +160,10 @@ span {
   color: white;
 }
 .btn-outline-darkgreen:hover {
-  border-color: #3a3e3e !important;
+ 
 }
 .btn-outline-darkgreen:focus {
-  border-color: #3a3e3e;
+  border-color: #071011 !important;
 }
 
 .navbar-nav .nav-link.active,
@@ -254,7 +271,9 @@ span {
   flex-wrap: wrap;
 }
 .form-searchbar:focus{
-  border:none !important;
+  border-color: red;
+ border: 1px solid red !important;
+  
 }
 
 /* Calender */
@@ -395,6 +414,9 @@ background-color: #B08E54 !important;
 .textimonialdesc{
   width: 80%;
 }
+.textimonialspan{
+  margin-left: 4rem;
+}
 
 /* Instafeed */
 .instafeedcard {
@@ -465,7 +487,7 @@ background-color: #B08E54 !important;
 }
 .tags {
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #282B2B;
   border-radius: 15px;
   padding: 5px;
   font-size: 14px;
@@ -475,6 +497,11 @@ background-color: #B08E54 !important;
   top: 15px;
   right: 20px;
   border-radius: 4px;
+}
+.btn-light:hover{
+  color: #B08E54;
+  background-color: #B08E54;
+  border: 1px solid #B08E54;
 }
 
 .otherrooms {
@@ -574,7 +601,7 @@ background-color: #B08E54 !important;
 .properties_banner {
   /* Add your background image URL here */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../public/assets/banner3.png");
+    url("../public/assets/destination.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -592,25 +619,38 @@ background-color: #B08E54 !important;
   height: 540px;
 }
 .Blog-title {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 27px;
 }
 .blog-description {
   font-size: 16px;
 }
 .blog-card-img-top {
-  width: 442.71px;
+  width: 370.71px;
   height: 270px;
   object-fit: cover;
 }
 .blog-background {
   background-color: #1e2526;
   color: #fff;
-  width: 25rem;
+  width: 22.5rem;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
+  .navbarsize{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .list{
+    text-align: center;
+  }
+  .navbar-nav .nav-link.active {
+    color: #b69b6c;
+    border-bottom: 2px solid;
+
+    text-align: center;
+}
   .searchbar-section {
     position: static;
   }

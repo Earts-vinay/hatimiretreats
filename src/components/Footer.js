@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram,FaArrowRight  } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='mt-5'>
+    <footer className='mt-5 navbarsize'>
       <div className="footer text-white ">
         <MDBFooter bgColor='#071011' className='text-center text-white text-lg-start text-muted '>
           {/* Your footer content */}

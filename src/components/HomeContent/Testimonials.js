@@ -47,7 +47,7 @@ const Testimonials = () => {
         <div className="container text-white">
           <div className="row">
             <div className="col">
-              <span className="mx-5 px-5 mobileparagraph">TESTIMONIALS & REVIEWS</span>
+              <span className=" px-5 textimonialspan mobileparagraph">TESTIMONIALS & REVIEWS</span>
               <div className='d-flex justify-content-start align-items-start '>
         <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />
         <h1 className="display-4">Our Travel Stories</h1>

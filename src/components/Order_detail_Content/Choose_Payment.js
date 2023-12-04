@@ -22,10 +22,10 @@ const ChoosePayment = () => {
   return (
     <div className="container orderform p-5 rounded my-3 text-white">
       <div className=""> 
-        <p >Choose a Payment method to Pay</p>
+        <p className="m-0" >Choose a Payment method to Pay</p>
         <div className="d-flex align-items-center gap-2">
         <img src="assets/bg/secure.svg" className="img-fluid" alt="image" />
-        <p className="text-gold m-0">100% safe & secure payments</p></div>
+        <p className="text-gold my-1 fs-7">100% safe & secure payments</p></div>
         </div>
         
 
@@ -184,12 +184,12 @@ const ChoosePayment = () => {
                     </select>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="accountNumber">Enter Account Number</label>
+                    <label htmlFor="accountNumber">Enter Net Banking Id</label>
                     <input
                       type="text"
                       className="form-control bg-transparent payment_form"
                       id="accountNumber"
-                      placeholder="Enter Account Number"
+                      placeholder="Enter Net Banking Id"
                     />
                   </div>
                   <div className="form-group">

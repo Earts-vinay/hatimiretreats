@@ -22,7 +22,7 @@ const ProductDetail = () => {
       </div>
 
       {/* Other Rooms */}
-      <div className="container">
+      <div className="">
         <Other_Rooms />
       </div>
     </div>

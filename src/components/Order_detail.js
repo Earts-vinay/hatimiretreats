@@ -25,10 +25,10 @@ const Order_detail = () => {
 
   return (
     <>
-      <div>
+    <div className="py-5">
         <div className="container bootdey">
           <div className="col-md-12 container">
-            <section className="panel my-5">
+            <section className="panel my-5 mx-5 px-5">
               <div className="panel-body row p-3 rounded">
                 <h2 className="text-white">Booking Info</h2>
                 <div className="col-md-4">
@@ -56,18 +56,18 @@ const Order_detail = () => {
                       </p>
                     </div>
 
-                    <div className="row text-white d-flex justify-content-center">
+                    <div className="row text-white pt-4 d-flex justify-content-center">
                         <div className="checkin  col-3 border-right text-center">
-                          <p className="m-0 ">check in</p>
-                          <p className="m-0">Wed 8th Nov</p>
+                          <p >check in</p>
+                          <p >Wed 8th Nov</p>
                         </div>
                         <div className="checkout  col-3 border-right text-center">
-                            <p className="m-0">check out</p>
-                            <p className="m-0">Sun 12th Nov</p>
+                            <p >check out</p>
+                            <p >Sun 12th Nov</p>
                         </div>
                         <div className="rooms col-3 border-right text-center">
-                            <p className="m-0">Room</p>
-                            <p className="m-0">1 Room</p>
+                            <p >Room</p>
+                            <p >1 Room</p>
 
                         </div>
                         <div className="guest col-3  text-center">
@@ -81,22 +81,19 @@ const Order_detail = () => {
             </section>
           </div>
         </div>
-      </div>
-
-      <div>
 
       <div className="container mt-4  ">
-      <div className="row ">
+      <div className="row  mx-5 px-5 ">
         {/* Left side: Registration Form */}
-        <div className="col-md-6   ">
+        <div className="col-md-7 px-1">
          <Guest_Details_form/>
         </div>
 
         {/* Right side: Billing Details */}
-        <div className="col-md-6 orderform p-3 rounded" >
-         <div>
+        <div className="col-md-5  px-1" >
+         <div className="orderform rounded p-4">
           <p className="text-white px-3">Billing Details</p>
-          <div className="mb-3 d-flex p-3"> 
+          <div className="my-3 d-flex p-3"> 
             <input
               type="text"
               className="orderforminput bg-transparent"
@@ -107,22 +104,22 @@ const Order_detail = () => {
             <button onClick={applyCoupon} className="btn btn-searchbar">Apply</button>
           </div>
           <div className="mb-3 text-white p-3">
-            <div className="d-flex justify-content-between"><p>Room price for 4Nights x 4Guests </p> <p>₹7998</p></div>
-            <div className="d-flex justify-content-between"><p>Add ons</p> <p>₹7998</p></div>
-            <div className="d-flex justify-content-between"><p>Taxes & Service Fees</p> <p>₹753</p></div>
-            <div className="d-flex justify-content-between"><p>Hotel GST</p> <p>₹350</p></div>
-            <div className="d-flex justify-content-between"><p>Coupon discount</p> <p>₹1245</p></div>
-            <div className="d-flex justify-content-between"><p >Total Amount: </p> <p>₹{totalAmount}</p></div>    
+            <div className="d-flex justify-content-between mb-3"><p>Room price for 4Nights x 4Guests </p> <p>₹7998</p></div>
+            <div className="d-flex justify-content-between mb-3"><p>Add ons</p> <p>₹7998</p></div>
+            <div className="d-flex justify-content-between mb-3"><p>Taxes & Service Fees</p> <p>₹753</p></div>
+            <div className="d-flex justify-content-between mb-3"><p>Hotel GST</p> <p>₹350</p></div>
+            <div className="d-flex justify-content-between mb-3"><p>Coupon discount</p> <p>₹1245</p></div>
+            <div className="d-flex justify-content-between mb-3"><p >Total Amount: </p> <p>₹{totalAmount}</p></div>    
           </div>
-          <div className="d-flex justify-content-between text-white px-3 fs-4"> <p>Payable Amount: </p> <p>₹{payableAmount}</p></div>
+          <div className="d-flex justify-content-between text-white px-3 fs-4"> <p className="my-1">Payable Amount: </p> <p className="my-1">₹{payableAmount}</p></div>
         </div>
         </div>
       </div>
     </div>
-      </div>
-
+  
       <div>
       <Choose_Payment/>
+      </div>
       </div>
     </>
   );

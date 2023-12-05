@@ -70,18 +70,18 @@ const Bookings = () => {
   ];
   return (
     <>
-      <div className="my-3">
+      <div className="my-3 mx-5 px-5">
         <SearchBar check="bookings" className="bookings" />
       </div>
       <div>
         <div className="container bootdey">
           {products.map((product) => (
             <div className="col-md-12 " key={product.id}>
-              <section className="panel my-5">
+              <section className="panel my-5 mx-5 px-5">
                 <div className="panel-body row p-3 rounded">
                   <div className="col-md-4">
                     <div className="pro-img-details px-3 ">
-                      <p className="text-white m-0 dark w-25 p-1 d-flex justify-content-center bookingprice">{product.price}</p>
+                      <p className="text-white m-0 dark p-1 d-flex justify-content-center bookingprice">{product.price}</p>
                       <img
                         src={product.image}
                         className="w-100 rounded"
@@ -113,10 +113,10 @@ const Bookings = () => {
                           </p>
                           <p className="m-0">( 29 ratings ) Excellent</p>
                         </p>
-                        <p className="my-2 dimension p-2 rounded-2">
+                        <p className="my-1 dimension p-2 rounded-2">
                           Dimension : {product.dimension}
                         </p>
-                        <div className="tagged_as my-3 ">
+                        <div className="tagged_as my-2 ">
                           {product.tags.map((tag, index) => (
                             <span key={index} className="fs-7">
                               <a
@@ -179,6 +179,7 @@ const Bookings = () => {
                     <button
                       className="btn btn-round btn-light text-white"
                       type="button"
+                      
                     >
                       <NavLink className="nav-link" to="/productdetail">
                         View Details

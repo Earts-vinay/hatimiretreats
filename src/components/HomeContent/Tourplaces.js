@@ -64,14 +64,14 @@ const Tourplaces = () => {
     <div className="container">
       <div className="row text-white">
         <div className="col">
-        <span className="mx-5 px-5 mobileparagraph">Have a look</span>
+        <span className="mx-5 px-5 mobileresponsive">Have a look</span>
         <div className='d-flex justify-content-start align-items-center'>
         <img src="assets/bg/line.svg" className="linehome px-3" alt="image" />
         
           <h1>Find Your Desired Places</h1>
           
         </div>
-        <p className="mx-5 px-5 m-0 mobileparagraph">Voluptate exercitation incididunt aliquip deserunt duis aute irure dolor.</p>
+        <p className="mx-5 px-5 m-0 mobileresponsive">Voluptate exercitation incididunt aliquip deserunt duis aute irure dolor.</p>
         </div>
       </div>
       <div className="carousel-wrapper">
@@ -98,7 +98,7 @@ const Tourplaces = () => {
                   />
                   <div className="card-body my-4">
                     <h2 className="card-title text-gold">{card.title}</h2>
-                    <p className="fs-7 mt-2 text-lightwhite">{card.description}</p>
+                    <p className="fs-7 mt-2 text-lightwhite mb-3">{card.description}</p>
                     <a href="#" className="btn eg-btn btn">
                       View More
                     </a>

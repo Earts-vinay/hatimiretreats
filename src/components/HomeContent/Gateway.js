@@ -14,7 +14,7 @@ const Gateway = () => {
         <h1>Gateway of Serenity</h1>
         </div>
           
-          <div className="paraconternt my-5 mx-3">
+          <div className="paraconternt my-4 mx-3">
             <p>
               Discover the peacefulness and spirituality of Hatimi Retreats
               properties, where the past meets the present, and guests are

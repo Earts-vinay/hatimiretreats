@@ -53,12 +53,12 @@ const Booking_card = () => {
   };
 
   return (
-    <div className="col-lg-5  py-5 ">
+    <div className="col-lg-5 ps-3 pe-0   ">
     {/* Right side: Billing Details */}
     <div className="billing-details product_detail_icon_bg rounded px-5 py-3">
       <p className="text-center py-3 fs-4">Booking Details</p>
-
-      <div className="quantity d-flex justify-content-between align-items-center">
+<div >
+      <div className="quantity d-flex justify-content-between align-items-center mb-1">
         <p className="mb-1">Adults:</p>
         <p className="d-flex gap-2 product_detail_increment p-2 rounded-3">
           <p className="m-0" onClick={() => handleAdultsChange(-1)}>
@@ -71,7 +71,7 @@ const Booking_card = () => {
         </p>
       </div>
 
-      <div className="quantity d-flex justify-content-between align-items-center">
+      <div className="quantity d-flex justify-content-between align-items-center mb-1">
         <p className="mb-1">Kids:</p>
         <p className="d-flex gap-2 product_detail_increment p-2 rounded-3 ">
           <p className="m-0" onClick={() => handleKidsChange(-1)}>
@@ -84,7 +84,7 @@ const Booking_card = () => {
         </p>
       </div>
 
-      <div className="quantity d-flex justify-content-between align-items-center">
+      <div className="quantity d-flex justify-content-between align-items-center mb-1">
         <p className="mb-1">Rooms:</p>
         <p className="d-flex gap-2 product_detail_increment p-2 rounded-3 ">
           <p className="m-0" onClick={() => handleRoomChange(-1)}>
@@ -96,11 +96,11 @@ const Booking_card = () => {
           </p>
         </p>
       </div>
-
+      </div>
       {/* Addons */}
       <div className="my-3">
         <h5>Addons</h5>
-        <div className="quantity d-flex justify-content-between align-items-center">
+        <div className="quantity d-flex justify-content-between align-items-center mb-1">
           <p className="mb-1">Extra Beds </p>
           <p className="d-flex gap-2 product_detail_increment p-2 rounded-3 ">
             <p className="m-0" onClick={() => handleBedsChange(-1)}>
@@ -113,7 +113,7 @@ const Booking_card = () => {
           </p>
         </div>
 
-        <div className="quantity d-flex justify-content-between align-items-center">
+        <div className="quantity d-flex justify-content-between align-items-center mb-1">
           <p className="mb-1">Extra Blankets </p>
           <p className="d-flex gap-2 product_detail_increment p-2 rounded-3 ">
             <p className="m-0" onClick={() => handleBlanketsChange(-1)}>
@@ -126,7 +126,7 @@ const Booking_card = () => {
           </p>
         </div>
 
-        <div className="quantity d-flex justify-content-between align-items-center">
+        <div className="quantity d-flex justify-content-between align-items-center mb-1">
           <p className="mb-1">Extra Pillows </p>
           <p className="d-flex gap-2 product_detail_increment p-2 rounded-3 ">
             <p className="m-0" onClick={() => handlePillowsChange(-1)}>
@@ -155,22 +155,22 @@ const Booking_card = () => {
           </button>
         </div>
         <div className="mb-3 text-white py-3">
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Room price for 4Nights x 4Guests </p> <p>₹7998</p>
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Add ons</p> <p>₹7998</p>
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Taxes & Service Fees</p> <p>₹753</p>
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Hotel GST</p> <p>₹350</p>
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Coupon discount</p> <p>₹1245</p>
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mb-2">
             <p>Total Amount: </p> <p>₹{totalAmount}</p>
           </div>
         </div>

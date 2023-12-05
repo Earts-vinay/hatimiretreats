@@ -60,7 +60,7 @@ const Other_Rooms = () => {
   };
 
   return (
-    <section className="my-5 py-5 mobileparagraph">
+    <section className="my-5 py-5 mobileresponsive">
       <div className="d-flex justify-content-start align-items-center my-3">
         <img src="assets/bg/line.svg" className="linehome px-3" alt="image" />
         <h1 className="text-white">Other Rooms</h1>

@@ -91,23 +91,23 @@ const Product_Description = () => {
       ];
 
   return (
-    <div className="col-lg-7 p-5">
+    <div className="col-lg-7 pe-2 ps-0">
             <div className="icon-row text-gold d-flex justify-content-between ">
-              <div className="p-3 product_detail_icon_bg rounded">
+              <div className="p-4 d-flex flex-column gap-3 product_detail_icon_bg rounded">
                 <FaBed className=" icon fs-3  " />
                 <p className="text-gold">3 bed rooms</p>
               </div>
-              <div className="p-3 product_detail_icon_bg rounded">
+              <div className="p-4 d-flex flex-column gap-3 product_detail_icon_bg rounded">
                 <MdHotTub className="icon fs-3" />
                 <p>2 Bathrooms</p>
               </div>
 
-              <div className="p-3 product_detail_icon_bg rounded">
+              <div className="p-4 d-flex flex-column gap-3 product_detail_icon_bg rounded">
                 <FaCar className="icon fs-3" />
                 <p>3 Cars/2 Bikes</p>
               </div>
 
-              <div className="p-3 product_detail_icon_bg rounded">
+              <div className="p-4 d-flex flex-column gap-3 product_detail_icon_bg rounded">
                 <FaCat className="icon fs-3" />
                 <p>0 Pets Allowed</p>
               </div>
@@ -115,7 +115,7 @@ const Product_Description = () => {
 
             {/* Product Description */}
             <div className="product-description text-white py-5">
-              <p>Product Description</p>
+              <p className='py-2'>Product Description</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Adipisci facere, voluptatem magnam possimus repellendus
@@ -144,9 +144,9 @@ const Product_Description = () => {
             {/* Safety and Hygiene */}
             <div className="my-5">
               <p>Safety and Hygiene</p>
-              <div className="row my-3">
+              <div className="row my-3 ">
                 <div className="col-6">
-                  <div className="d-flex">
+                  <div className="d-flex mb-3">
                     <FaBroom size={20} style={{ marginRight: "5px" }} />
                     <p>Daily Cleaning</p>
                   </div>
@@ -156,7 +156,7 @@ const Product_Description = () => {
                   </div>
                 </div>
                 <div className="col-6">
-                  <div className="d-flex">
+                  <div className="d-flex mb-3">
                     <FaFireExtinguisher
                       size={20}
                       style={{ marginRight: "5px" }}
@@ -176,7 +176,7 @@ const Product_Description = () => {
 
             {/* Near by Services */}
             <div className="my-3">
-              <p>Nearby Services</p>
+              <p className='mb-3'>Nearby Services</p>
               <div
                 id="map-container-google-2"
                 class="z-depth-1-half map-container w-100 rounded "
@@ -216,7 +216,7 @@ const Product_Description = () => {
 
             {/* Reviews */}
             <div className="my-5">
-              <p>
+              <p className='mb-3'>
                 Reviews <FaStar className="text-gold" /> 5.0
               </p>
               {reviewItems.map((item, index) => (

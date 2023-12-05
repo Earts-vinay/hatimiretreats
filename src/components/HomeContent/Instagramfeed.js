@@ -21,7 +21,7 @@ const Instagramfeed = () => {
      
       <div className="container">
         <div className="insta text-white  align-items-center">
-          <div className="px-5 mobileparagraph"><FaInstagram className="fs-1 mx-5 mobileparagraph " /> {/* Instagram Icon */}</div>
+          <div className="px-5 mobileresponsive"><FaInstagram className="fs-1 mx-5 mobileresponsive " /> {/* Instagram Icon */}</div>
           
           <div className='d-flex justify-content-start align-items-start '>
         <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />
@@ -29,7 +29,7 @@ const Instagramfeed = () => {
         </div>
           
         </div>
-        <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-5 mx-5 py-3 mobileparagraph">
+        <div className="instafeed row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-5 mx-5 py-3 mobileresponsive">
           {cardData.map((card, index) => (
             <div key={index} className="col">
               <img

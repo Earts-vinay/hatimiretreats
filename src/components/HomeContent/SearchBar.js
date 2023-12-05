@@ -109,13 +109,13 @@ function SearchBar(props) {
       }  p-3`}
     >
       <div className="container ">
-        <div className="multi-main-search searchbarborder py-5 mx-5 row d-flex justify-content-between align-items-center searchbar-mobile">
+        <div className="multi-main-search searchbarborder py-5 row d-flex justify-content-between align-items-center searchbar-mobile">
           {/* Destination */}
           <div className="col-lg-2 broder-right p-0 text-center">
             <div className="dropdown gap-2 ">
             
               <button
-                className="btn btn-outline-darkgreen text-white destination_box p-3"
+                className="btn btn-outline-darkgreen text-white destination_box px-0 py-3"
                 type="button"
                 id="destinationDropdown"
                 data-bs-toggle="dropdown"
@@ -150,17 +150,17 @@ function SearchBar(props) {
 
           {/* Date Picker */}
 
-          <div className="col-lg-2 broder-right">
+          <div className="col-lg-2 broder-right px-1">
             <div className="search-box-single d-flex  fs-4 gap-2">
               <DateRangePicker onApply={handleDateSelect}>
-                <div className="search-box-single d-flex align-items-center justify-content-center gap-2">
-                  <div className="d-flex flex-column align-items-center">
-                    <p className="m-0 text-center  text-white fs-6">
+                <div className="search-box-single d-flex align-items-center  gap-2">
+                  <div className="d-flex flex-column w-75 ">
+                    <p className="m-0 mx-2 text-white fs-6">
                       Check in
                     </p>
                     <input
                       type="text"
-                      className="form-searchbar text-center custom-date-picker"
+                      className="form-searchbar  custom-date-picker"
                       value={
                         dateRange.startDate
                           ? formattedDate(dateRange.startDate)
@@ -178,12 +178,12 @@ function SearchBar(props) {
               </DateRangePicker>
             </div>
           </div>
-          <div className="col-lg-2 broder-right">
-            <div className="search-box-single d-flex align-items-center justify-content-center fs-4 gap-2">
+          <div className="col-lg-2 broder-right px-1">
+            <div className="search-box-single d-flex align-items-center  fs-4 ">
               <DateRangePicker onApply={handleDateSelect}>
-                <div className="search-box-single d-flex align-items-center justify-content-center gap-2">
-                  <div className="d-flex flex-column">
-                    <p className="m-0 text-center mx-2 text-white fs-6">
+                <div className="search-box-single d-flex align-items-center  ">
+                  <div className="d-flex flex-column w-75">
+                    <p className="m-0  mx-2 text-white fs-6">
                       Check out
                     </p>
                     <input
@@ -208,10 +208,10 @@ function SearchBar(props) {
           </div>
 
           {/* Room */}
-          <div className="col-lg-2 broder-right text-white d-flex justify-content-center align-items-center gap-2">
+          <div className="col-lg-2 broder-right text-white d-flex justify-content-center align-items-center gap-2 px-0">
             <div className="dropdown" ref={roomDropdownRef}>
               <button
-                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-1"
+                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-3 "
                 type="button"
                 id="roomDropdown"
                 data-bs-toggle="dropdown"
@@ -271,7 +271,7 @@ function SearchBar(props) {
             <div className="col d-flex justify-content-center align-items-center gap-2">
               <div className="dropdown text-white" ref={dropdownRef}>
                 <button
-                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-2 "
+                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-2 "
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"

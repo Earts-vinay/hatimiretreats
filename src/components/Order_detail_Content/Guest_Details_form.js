@@ -9,10 +9,10 @@ const Guest_Details_form = () => {
   const [companyName, setCompanyName] = useState('');
 
   return (
-    <div className="orderform p-3 rounded">
+    <div className="orderform px-4 py-4 rounded ">
     <p className="text-white">Guest Details</p>
      <form>
-       <div className="mb-3">
+       <div className="py-3">
          <label htmlFor="nameInput" className="form-label text-white">Name</label>
          <input
            type="text"

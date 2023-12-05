@@ -12,7 +12,7 @@ const ProductDetail = () => {
 
       {/* Leftside icons */}
       <div>
-        <div className="row text-white ">
+        <div className="row text-white mx-5 px-5 ">
           {/* Left Description */}
           <Product_Description />
 

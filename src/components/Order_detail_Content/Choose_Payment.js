@@ -20,8 +20,9 @@ const ChoosePayment = () => {
   };
 
   return (
-    <div className="container orderform p-5 rounded my-3 text-white">
-      <div className=""> 
+    <div className="container  my-3 text-white">
+      <div className="orderform py-5 rounded choose-payment px-5">
+      <div className=" "> 
         <p className="m-0" >Choose a Payment method to Pay</p>
         <div className="d-flex align-items-center gap-2">
         <img src="assets/bg/secure.svg" className="img-fluid" alt="image" />
@@ -29,9 +30,9 @@ const ChoosePayment = () => {
         </div>
         
 
-      <div className="row">
+      <div className="row ">
        
-        <div className="col-md-6 p-3 ">
+        <div className="col-md-4 p-3 ">
           <div className="py-4">
         <ButtonGroup>
         <Button
@@ -103,8 +104,8 @@ const ChoosePayment = () => {
            
           </form>
         </div>
-        <div className="col-md-6">
-          <div className="card payment_card text-white">
+        <div className="col-md-8 px-5">
+          <div className="card payment_card text-white mx-5">
             <div className="card-body card_details gap-2 d-block">
               {paymentMode === 'creditCard' && (
                 <div>
@@ -211,6 +212,7 @@ const ChoosePayment = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

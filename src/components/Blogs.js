@@ -46,7 +46,6 @@ const Blogs = () => {
         <p className='fs-6 text-center'>#1 Blog on theme marketing by Bodrum</p>
        </div>
       <div className='blogs  px-5 mx-5 gap-5'>
-         
       <div className="row mt-5 ">
         {cardsData.map((card) => (
           <div key={card.id} className="col-md-4 my-4 ">
@@ -54,9 +53,9 @@ const Blogs = () => {
               <img src={card.imageUrl} className="blog-card-img-top" alt={`Card ${card.id}`} />
               <div className="card-body p-3">
                 <h2 className="Blog-title text-gold">{card.title}</h2>
-                <p className="blog-description">{card.description}</p>
+                <p className="blog-description mt-3 fs-7">{card.description}</p>
                 <div className=' d-flex justify-content-center mt-4'>
-                <a href="#" className="btn btn-searchbar">
+                <a href="blogdetail" className="btn btn-searchbar">
                   View More
                 </a>
                 </div>
@@ -65,8 +64,6 @@ const Blogs = () => {
           </div>
         ))}
       </div>
-    
-    
       </div>
       <div className='my-5'>
       <Instagramfeed/>

@@ -21,12 +21,12 @@ const Footer = () => {
                   </h6>
                   <p>
                     Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit.
+                    amet,
                   </p>
                 </MDBCol>
 
                 {/* Column for Products */}
-                <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4 text-white'>
+                <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4 text-white d-flex flex-column gap-3 mt-2 '>
                   
                   <p className='footerlist'>
                     <Link to='/about' className='footerlist'>
@@ -57,7 +57,7 @@ const Footer = () => {
                 </MDBCol>
 
                 {/* Column for Useful links */}
-                <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4 text-white'>
+                <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4 text-white d-flex flex-column gap-3 mt-2'>
                  
                   <p>
                     <Link to='/pricing' className='footerlist'>
@@ -88,8 +88,8 @@ const Footer = () => {
                 </MDBCol>
 
                 {/* Column for Contact */}
-                <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4 text-white'>
-                  <h6 className='text-uppercase fw-bold mb-4'>Get in Touch</h6>
+                <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4 text-white d-flex flex-column gap-3 mt-2'>
+                  <h6 className='text-uppercase fw-bold '>Get in Touch</h6>
                   <p className='d-flex social_icons_footer'>
             <FaFacebook className='fs-4 me-4' style={{ color: 'white' }} />
             <FaInstagram className='fs-4' style={{ color: 'white' }} />

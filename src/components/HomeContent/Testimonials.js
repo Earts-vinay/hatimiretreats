@@ -47,7 +47,7 @@ const Testimonials = () => {
         <div className="container text-white">
           <div className="row">
             <div className="col">
-              <span className=" px-5 textimonialspan mobileparagraph">TESTIMONIALS & REVIEWS</span>
+              <span className=" px-5 textimonialspan mobileresponsive">TESTIMONIALS & REVIEWS</span>
               <div className='d-flex justify-content-start align-items-start '>
         <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />
         <h1 className="display-4">Our Travel Stories</h1>
@@ -55,7 +55,7 @@ const Testimonials = () => {
               
               <div className="carousel w-100 ">
                 <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                  <div className="carousel-inner px-5 mx-5 mobileparagraph">
+                  <div className="carousel-inner px-5 mx-5 mobileresponsive">
                     {testimonialsChunks.map((chunk, index) => (
                       <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                         <div className="row px-5">

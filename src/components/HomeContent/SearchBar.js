@@ -151,16 +151,16 @@ function SearchBar(props) {
           {/* Date Picker */}
 
           <div className="col-lg-2 broder-right px-1">
-            <div className="search-box-single d-flex  fs-4 gap-2">
+            <div className="search-box-single d-flex justify-content-center fs-4 gap-2">
               <DateRangePicker onApply={handleDateSelect}>
                 <div className="search-box-single d-flex align-items-center  gap-2">
-                  <div className="d-flex flex-column w-75 ">
+                  <div className="d-flex flex-column justify-content-center align-items-center w-75 ">
                     <p className="m-0 mx-2 text-white fs-6">
                       Check in
                     </p>
                     <input
                       type="text"
-                      className="form-searchbar  custom-date-picker"
+                      className="form-searchbar text-center custom-date-picker"
                       value={
                         dateRange.startDate
                           ? formattedDate(dateRange.startDate)
@@ -179,10 +179,10 @@ function SearchBar(props) {
             </div>
           </div>
           <div className="col-lg-2 broder-right px-1">
-            <div className="search-box-single d-flex align-items-center  fs-4 ">
+            <div className="search-box-single d-flex justify-content-center align-items-center  fs-4 ">
               <DateRangePicker onApply={handleDateSelect}>
-                <div className="search-box-single d-flex align-items-center  ">
-                  <div className="d-flex flex-column w-75">
+                <div className="search-box-single d-flex align-items-center  gap-2">
+                  <div className="d-flex flex-column justify-content-center align-items-center w-75">
                     <p className="m-0  mx-2 text-white fs-6">
                       Check out
                     </p>
@@ -267,11 +267,11 @@ function SearchBar(props) {
           </div>
 
           {/* persons */}
-          <div className="row col-lg-2">
-            <div className="col d-flex justify-content-center align-items-center gap-2">
+          <div className="row col-lg-2 px-0 m-0">
+            <div className="col d-flex justify-content-center align-items-center px-0">
               <div className="dropdown text-white" ref={dropdownRef}>
                 <button
-                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-2 "
+                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-3 "
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"

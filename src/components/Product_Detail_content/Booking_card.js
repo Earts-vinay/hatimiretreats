@@ -53,7 +53,7 @@ const Booking_card = () => {
   };
 
   return (
-    <div className="col-lg-5 ps-3 pe-0   ">
+    <div className="col-lg-5 ps-3 pe-0 bookingcard   ">
     {/* Right side: Billing Details */}
     <div className="billing-details product_detail_icon_bg rounded px-5 py-3">
       <p className="text-center py-3 fs-4">Booking Details</p>

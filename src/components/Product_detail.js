@@ -9,18 +9,15 @@ const ProductDetail = () => {
     <div className="container">
       {/* Topimages */}
       <Topimages />
-
       {/* Leftside icons */}
       <div>
-        <div className="row text-white mx-5 px-5 ">
+        <div className="row text-white mx-5 px-5 mobileresponsive ">
           {/* Left Description */}
           <Product_Description />
-
           {/* rightside Bookings */}
           <Booking_card />
         </div>
       </div>
-
       {/* Other Rooms */}
       <div className="">
         <Other_Rooms />

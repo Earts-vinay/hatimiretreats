@@ -97,8 +97,8 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item align-items-center d-flex ">
-              <FaRegUserCircle className='fs-3 text-white'/>
+            <li className="nav-item align-items-center d-flex justify-content-center ">
+              <FaRegUserCircle className='fs-3 text-white '/>
             </li>
           </ul>
         </div>

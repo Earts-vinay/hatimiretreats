@@ -59,7 +59,7 @@ const ChoosePayment = () => {
         </Button>
       </ButtonGroup>
       </div>
-          <form>
+          <form className="d-flex flex-column gap-3">
             <div className="form-check ">
               <input
                 className="form-check-input"
@@ -71,7 +71,7 @@ const ChoosePayment = () => {
               />
               <div className="">
               <img src="assets/bg/cardicon.svg" className="img-fluid" alt="image" />
-              <label className="form-check-label mx-2">Credit Card</label>
+              <label className="form-check-label mx-2">Credit / Debit Card</label>
               </div>
             </div>
         
@@ -104,8 +104,8 @@ const ChoosePayment = () => {
            
           </form>
         </div>
-        <div className="col-md-8 px-5">
-          <div className="card payment_card text-white mx-5">
+        <div className="col-md-8 px-5 mobileresponsive">
+          <div className="card payment_card text-white mx-5 mobileresponsive">
             <div className="card-body card_details gap-2 d-block">
               {paymentMode === 'creditCard' && (
                 <div>
@@ -125,6 +125,7 @@ const ChoosePayment = () => {
                      
                     />
                   </div>
+                  <div className="d-flex gap-3">
                   <div className="form-group">
                     <label htmlFor="expiry">Expiry Month</label>
                     <input
@@ -142,6 +143,7 @@ const ChoosePayment = () => {
                       id="cvv"
                       placeholder="CVV"
                     />
+                  </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="cardHolder">Card Holder Name</label>

@@ -81,7 +81,7 @@ const Other_Rooms = () => {
             <div key={index} className="item">
               <div className="row px-3 ">
                 <div className="tourcard bgcard">
-                <p className="text-white m-0 dark w-25 p-1 d-flex justify-content-center otherroomprice">{card.price}</p>
+                <p className="text-white m-0 dark p-1 d-flex justify-content-center otherroomprice">{card.price}</p>
                   <img
                     className="tourimage "
                     src={card.imageUrl}

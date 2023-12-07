@@ -4,25 +4,25 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 const Testimonials = () => {
   const testimonials = [
     {
-      author: "Mohammed Shabbir Modi",
+      author: "Mohammed Shabbir",
       designation: "Hatimi Retreats, Matheran",
       quote:
         "As a traveller in the community, I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth .",
     },
     {
-      author: "Modi",
+      author: "Abdullah",
       designation: "Hatimi, Matheran",
       quote:
         " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
     },
     {
-      author: "Ravi",
+      author: "Ahmed",
       designation: "Hatimi, Matheran",
       quote:
         " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",
     },
     {
-      author: "Ramu",
+      author: "Ayaan",
       designation: "Hatimi, Matheran",
       quote:
         " I am confident in saying Hatimi Retreats has created a very homely experience for us this trip around. The space, the property and the experience from a place that is so understanding to the needs of the community and providing a smooth and satisfactory family experience of the same.",

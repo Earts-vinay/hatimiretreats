@@ -11,7 +11,7 @@ const Topimages = () => {
   ];
 
   return (
-    <div className="row mt-5 mx-5 px-5 py-5">
+    <div className="row mt-5 mx-5 px-5 py-5 mobileresponsive topimages">
         <div className=" py-3 px-0  ">
           <h2 className="text-gold mb-0">Room Name/type</h2>
           <p className="text-white d-flex align-items-center ">

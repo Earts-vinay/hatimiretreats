@@ -70,14 +70,14 @@ const Bookings = () => {
   ];
   return (
     <>
-      <div className="my-3 mx-5 px-5">
+      <div className="my-3 mx-5 px-5 mobileresponsive">
         <SearchBar check="bookings" className="bookings" />
       </div>
       <div>
         <div className="container bootdey">
           {products.map((product) => (
             <div className="col-md-12 " key={product.id}>
-              <section className="panel my-5 mx-5 px-5">
+              <section className="panel my-5 mx-5 mobileresponsive px-5">
                 <div className="panel-body row p-3 rounded">
                   <div className="col-md-4">
                     <div className="pro-img-details px-3 ">

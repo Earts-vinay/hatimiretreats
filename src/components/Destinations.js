@@ -65,14 +65,14 @@ const Destinations = () => {
         {cardData.map((card, index) => (
             <div key={index} className="item">
               <div className="row px-3 ">
-                <div className="tourcard bgcard">
+                <div className="destination_card bgcard d-flex align-items-center flex-column justify-content-center ">
                   <img
                     className="tourimage "
                     src={card.imageUrl}
                     alt="Card"
                     
                   />
-                  <div className="card-body my-4">
+                  <div className="card-body my-4 destination_card_body">
                     <h2 className="card-title text-gold">{card.title}</h2>
                     <p className="fs-7 mt-2">{card.description}</p>
                     <a href="#" className="btn eg-btn btn mt-3">

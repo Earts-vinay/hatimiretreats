@@ -45,7 +45,7 @@ const Blogs = () => {
         <h1 className='text-center '>News & Articles</h1>
         <p className='fs-6 text-center'>#1 Blog on theme marketing by Bodrum</p>
        </div>
-      <div className='blogs  px-5 mx-5 gap-5'>
+      <div className='blogs  px-5 mx-5 gap-5 mobileresponsive'>
       <div className="row mt-5 ">
         {cardsData.map((card) => (
           <div key={card.id} className="col-md-4 my-4 ">

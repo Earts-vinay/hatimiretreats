@@ -76,7 +76,7 @@ const Tourplaces = () => {
       </div>
       <div className="carousel-wrapper">
         <button onClick={slidePrev} className="arrow-btn prev">
-        <FiChevronLeft className="fs-1" />
+        <FiChevronLeft className="fs-1 arrowleft" />
         </button>
         <AliceCarousel
           mouseTracking
@@ -87,7 +87,7 @@ const Tourplaces = () => {
         >
           {cardData.map((card, index) => (
             <div key={index} className="item">
-              <div className="row px-3 ">
+              <div className="row px-2 ">
                 <div className="tourcard bgcard">
                   <img
                     className="tourimage "
@@ -109,7 +109,7 @@ const Tourplaces = () => {
           ))}
         </AliceCarousel>
         <button onClick={slideNext} className="arrow-btn next d-flex align-items-center">
-        <FiChevronRight className="fs-1"/>
+        <FiChevronRight className="fs-1 arrowright"/>
         </button>
       </div>
     </div>

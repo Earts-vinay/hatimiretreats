@@ -12,7 +12,7 @@ const Footer = () => {
           <section className='d-inline'>
             <MDBContainer className='text-center text-md-start mt-5'>
               {/* Rest of your footer content */}
-              <MDBRow className='mt-3'>
+              <MDBRow className='mt-3 mx-5 mobileresponsive'>
                 {/* Column for Company name and logo */}
                 <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4 text-white'>
                   <h6 className='text-uppercase fw-bold mb-4'>
@@ -122,7 +122,7 @@ const Footer = () => {
                 <a href="#" className="egns-lab">
                    @ Hatimi Retreats {" "}
                 </a>{" "}
-                {" "}  | Design By{" "}
+                {" "}  | Designed By{" "}
                 <a
                   href="https://themeforest.net/category/site-templates?term=egenslab"
                   className="egns-lab"

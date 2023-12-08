@@ -21,7 +21,7 @@ const Gateway = () => {
               invited to share in the sacred history.
             </p>
 
-            <p>
+            <p className="my-3">
               At Hatimi Retreats, we proudly present our properties, each
               holding a unique and profound significance. These places have a
               special connection to His Holiness, Aali Qadr Mufaddal Saifuddin,
@@ -30,7 +30,7 @@ const Gateway = () => {
               home at some point in his life, with Panchgani being the oldest
               and dearest.
             </p>
-            <button type="submit" className="eg-btn btn btn-searchbar my-2 ">
+            <button type="submit" className="eg-btn btn btn-searchbar my-3 ">
             know More
           </button>
           </div>

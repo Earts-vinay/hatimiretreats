@@ -42,11 +42,14 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="background-container my-5">
-      <div className="bg-image d-flex align-items-center py-5">
+    <div className="background-container mb-5">
+      <div className="d-flex justify-content-end testimonial_icon">
+      <img src="assets/bg/testimonial2.svg" className="img-fluid text-end" alt="image" />
+      </div>
+      <div className="bg-image d-flex align-items-center py-5 ">
         <div className="container text-white">
           <div className="row">
-            <div className="col">
+            <div className="col py-5 px-0">
               <span className=" px-5 textimonialspan mobileresponsive">TESTIMONIALS & REVIEWS</span>
               <div className='d-flex justify-content-start align-items-start '>
         <img src="assets/bg/line.svg" className="linehome mx-3 mt-4 pt-3" alt="image" />

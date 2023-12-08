@@ -4,13 +4,20 @@ import "../App.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FaRegUserCircle } from "react-icons/fa";
 
-
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional: To enable smooth scrolling
+    });
+    setIsNavOpen(false); // Close the navbar when a NavLink is clicked
   };
 
   useEffect(() => {
@@ -34,9 +41,9 @@ const Navbar = () => {
 
   return (
     <nav className={navClass}>
-      <div className="container navbarsize ">
+      <div className="container navbarsize">
         {/* Logo */}
-        <div className="navbar-brand ">
+        <div className="navbar-brand">
           <img src="assets/hatimigold.svg" className="img-fluid h-25 w-25" alt="Hatimi Gold Logo" />
         </div>
 
@@ -57,43 +64,43 @@ const Navbar = () => {
           <ul className="navbar-nav gap-3 text-uppercase">
             {/* Your NavLink items */}
             <li className="nav-item">
-              <NavLink className="nav-link list" exact to="/" activeClassName="active-link">
+              <NavLink className="nav-link list" exact to="/" activeClassName="active-link"  onClick={scrollToTop}>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/destinations" activeClassName="active-link">
+              <NavLink className="nav-link list" to="/destinations" activeClassName="active-link"  onClick={scrollToTop}>
                 Destinations
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/services" activeClassName="active-link">
+              <NavLink className="nav-link list" to="/services" activeClassName="active-link"  onClick={scrollToTop}>
                 Services
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link list" to="/events" activeClassName="active-link">
+            {/* <li className="nav-item">
+              <NavLink className="nav-link list" to="/events" activeClassName="active-link"  onClick={scrollToTop}>
                Events
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/daypass" activeClassName="active-link">
+              <NavLink className="nav-link list" to="/daypass" activeClassName="active-link"  onClick={scrollToTop}>
                Daypass
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link list" to="/faqs" activeClassName="active-link">
+            {/* <li className="nav-item">
+              <NavLink className="nav-link list" to="/faqs" activeClassName="active-link"  onClick={scrollToTop}>
                Faq's
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/blogs" activeClassName="active-link">
+              <NavLink className="nav-link list" to="/blogs" activeClassName="active-link"  onClick={scrollToTop}>
                 Blogs
               </NavLink>
             </li>
             
             <li className="nav-item">
-              <NavLink className="nav-link list" to="/contact" activeClassName="active-link">
+              <NavLink className="nav-link list" to="/contact" activeClassName="active-link"  onClick={scrollToTop}>
                 Contact Us
               </NavLink>
             </li>

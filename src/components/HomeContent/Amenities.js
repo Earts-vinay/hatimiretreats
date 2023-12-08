@@ -3,7 +3,7 @@ import React from "react";
 const Amenities = () => {
   return (
     <div className="container">
-      <div className="reviews m-4 p-5 mobileresponsive">
+      <div className="reviews m-4 p-5 mx-5 mobileresponsive">
         <div className="row d-flex justify-content-center ">
           <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10 my-3">
             <div className="counter-single sibling-2 text-center d-flex flex-column hover-border1">
@@ -16,16 +16,12 @@ const Amenities = () => {
               </div>
               <div className="coundown d-flex flex-column text-white">
                 <div className="d-flex flex-row justify-content-center align-items-center my-3">
-                  <h3>
+                  <h3 >
                     Outstanding <br /> Amenities
                   </h3>
                 </div>
                 <p className="fs-7 text-start">
-                  Hatimi Retreats: where Amenities speak louder than words.
-                  Elevating everyday offerings into extraordinary experiences,
-                  our amenities serving as the cornerstone for lifelong memories
-                  represent the spirit of a magical stay at Hatimi Retreats. has
-                  context menu
+                Our Amenities speak louder than words. From breathtaking scenery to impeccable service, experience the magic of a stay at Hatimi Retreats.
                 </p>
               </div>
             </div>

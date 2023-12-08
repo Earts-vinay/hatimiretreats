@@ -103,11 +103,13 @@ const Footer = () => {
                   </p>
 
                   <form >
-            <div className='input-group mb-3 newsletter'>
+            <div className='input-group mb-3  d-flex justify-content-center align-items-center '>
               <input type='email' className='form-newsletter text-secondary' placeholder='Your Email' aria-label='Your Email' aria-describedby='button-addon2' />
-              <button className='btn btn-newsletter ' type='button' id='button-addon2'>
-                <FaArrowRight className=' text-white text-center' /> {/* Right Arrow Icon */}
-              </button>
+              <div className='input-group-prepend d-flex align-items-center'>
+          <span className='newsletter-btn bg-transparent '>
+            <FaArrowRight className='text-white' /> {/* Right Arrow Icon */}
+          </span>
+        </div>
             </div>
           </form>
                   

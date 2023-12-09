@@ -4,8 +4,11 @@ const BlogDetail = () => {
   const data = {
     title: 'WHY ONLY HATIMI RETREATS?',
     image: 'assets/blogdetail1.png',
+    author: "Mohammed Shabbir",
+        designation: "Hatimi Retreats, Matheran",
     descriptions: [
       {
+        
         title: 'Description 1',
         content:
           ['Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam placerat tortor commodo lectus laoreet venenatis. Donec ultricies, metus vitae bibendum consequat, tortor neque euismod lectus ',
@@ -30,14 +33,31 @@ const BlogDetail = () => {
       <div className='container'>
         <div className='row justify-content-center text-white'>            
             <h1 className='text-gold text-center my-4'>{data.title}</h1>
+            
+                  <div className="blog-author d-flex gap-3 mt-4  ">
+                  <div className="image">
+                    {/* Replace 'assets/profile.png' with your image URL */}
+                    <img src={`assets/profile.png`} style={{ width: 50 }} alt="image" />
+                  </div>
+                  <div className="author-text text-white w-100">
+                    <p className="m-0">{data.author}</p>
+                    <p className="testimonial_description text-white m-0">{data.designation}</p>
+                  </div>
+                </div>  
+          
             <img src={data.image} alt='Hatimi Retreats' className='blog-detail-image' />
             <div className='m-5 p-5'>
             {data.descriptions.map((desc, index) => (
-            <div key={index} className='col-lg-12 mb-4 d-flex flex-column align-items-center '>     
+            <div key={index} className='col-lg-12 mb-4 d-flex flex-column align-items-center '>   
+          
               <p className='text-start px-5 mx-5 ' >{desc.content.map((sentence,ind)=>{
                 return <><p>{sentence}</p><br/></>
+
+                
               })}</p>
+              
             </div>
+            
           ))}
           </div>
         </div>   

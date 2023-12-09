@@ -115,7 +115,7 @@ function SearchBar(props) {
             <div className="dropdown gap-2 ">
             
               <button
-                className="btn btn-outline-darkgreen text-white destination_box px-0 py-3"
+                className="btn btn-outline-darkgreen text-white destination_box px-0 py-3 border-0"
                 type="button"
                 id="destinationDropdown"
                 data-bs-toggle="dropdown"
@@ -152,7 +152,7 @@ function SearchBar(props) {
 
           <div className="col-lg-2 broder-right px-1">
             <div className="search-box-single d-flex justify-content-center fs-4 gap-2">
-              <DateRangePicker onApply={handleDateSelect}>
+              <DateRangePicker onApply={handleDateSelect} >
                 <div className="search-box-single d-flex align-items-center  gap-2">
                   <div className="d-flex flex-column justify-content-center align-items-center w-75 ">
                     <p className="m-0 mx-2 text-white fs-6">
@@ -160,7 +160,7 @@ function SearchBar(props) {
                     </p>
                     <input
                       type="text"
-                      className="form-searchbar text-center custom-date-picker"
+                      className="form-searchbar text-center custom-date-picker border-0"
                       value={
                         dateRange.startDate
                           ? formattedDate(dateRange.startDate)
@@ -188,7 +188,7 @@ function SearchBar(props) {
                     </p>
                     <input
                       type="text"
-                      className="form-searchbar text-center "
+                      className="form-searchbar text-center border-0"
                       value={
                         dateRange.endDate
                           ? formattedDate(dateRange.endDate)
@@ -211,7 +211,7 @@ function SearchBar(props) {
           <div className="col-lg-2 broder-right text-white d-flex justify-content-center align-items-center gap-2 px-0">
             <div className="dropdown" ref={roomDropdownRef}>
               <button
-                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-3 "
+                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-3 border-0 "
                 type="button"
                 id="roomDropdown"
                 data-bs-toggle="dropdown"
@@ -271,7 +271,7 @@ function SearchBar(props) {
             <div className="col d-flex justify-content-center align-items-center px-0">
               <div className="dropdown text-white" ref={dropdownRef}>
                 <button
-                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-3 "
+                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-3 border-0 "
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"

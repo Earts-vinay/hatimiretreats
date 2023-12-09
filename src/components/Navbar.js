@@ -73,16 +73,16 @@ const Navbar = () => {
                 Destinations
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link list" to="/services" activeClassName="active-link"  onClick={scrollToTop}>
                 Services
               </NavLink>
-            </li>
-            {/* <li className="nav-item">
+            </li> */}
+            <li className="nav-item">
               <NavLink className="nav-link list" to="/events" activeClassName="active-link"  onClick={scrollToTop}>
                Events
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <NavLink className="nav-link list" to="/daypass" activeClassName="active-link"  onClick={scrollToTop}>
                Daypass

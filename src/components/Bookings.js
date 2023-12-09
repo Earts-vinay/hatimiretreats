@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from 'react';
 import SearchBar from "./HomeContent/SearchBar";
 import "../App.css";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 import {
   FaUtensils,
   FaSnowflake,
@@ -13,6 +14,7 @@ import {
 import { FaLocationDot } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import Other_Rooms from "./Product_Detail_content/Other_Rooms";
+import { Tooltip } from 'bootstrap';
 
 const Bookings = () => {
   const amenityIcons = {
@@ -24,6 +26,15 @@ const Bookings = () => {
     "Balcony or Patio": FaSun,
     // Add more amenities and icons as needed
   };
+
+
+
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
 
   const products = [
     {
@@ -92,7 +103,41 @@ const Bookings = () => {
                   <div className="col-md-8 p-3">
                     <div className="head d-flex justify-content-between mt-3">
                     <h2 className="pro-d-title text-gold m-0">{product.name}</h2>
-                    <p className="m-0 text-green">Cancellation policy</p>
+                    <p className="text-green cursor-pointer" onClick={toggleModal}>
+        Cancellation policy
+      </p>
+
+      {showModal && (
+        <div className="modal d-flex justify-content-center align-items-center" tabIndex="-1" role="dialog" style={{ display: 'block', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <div className="modal-dialog rounded " role="document">
+            <div className="modal-content p-3 ">
+              <div className="modal-header">
+                <p className="modal-title text-center cursor-pointer ">Cancellation Policy</p>
+                <p type="button" className="close" onClick={toggleModal}>
+                <IoMdClose  className='fs-4'/>
+                </p>
+              </div>
+              <div className="modal-body fs-7">
+              Review our cancellation policy before making a reservation,
+as cancellation fees may apply. <br/>
+<p className='fs-8 py-3'>
+A. Cancel 48 hours before check-in: No charge. <br/>
+B. Cancel between 48 and 24 hours before check-in: 20% of the total amount.<br/>
+C. Cancel within 24 hours of check-in: 30% of the total amount.<br/>
+D. No-shows: Full booking amount may be charged.<br/>
+E. Advance Purchase/Non-Refundable Bookings: Cancellations, changes, or no-shows result in non-refundable bookings. <br/>
+F. Refunds may take 7-10 business days.<br/>
+</p>
+
+
+Email support@hatimiproperties.com for cancellations
+failure means loss of payments.
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      )}
                     </div>
                    
                     <p className="text-white d-flex align-items-center mb-1 ">
@@ -175,7 +220,8 @@ const Bookings = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="gap-3 d-flex justify-content-center mt-3">
+                  <div className="topline mt-0"></div>
+                  <div className="gap-3 d-flex justify-content-center mt-4">
                     <button
                       className="btn btn-round btn-light text-white"
                       type="button"

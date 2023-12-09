@@ -42,7 +42,7 @@ const Amenities = () => {
                   </h3>
                 </div>
                 <p className="fs-7 text-start">
-                Admire the dramatic roads driving to our hillside retreats offering stunning scenery day and night. Be captivated by the morning mist and twinkling night views that never fail to mesmerize our guests.
+                Admire the stunning day and night views on the scenic drive to our hillside retreats, where morning mist and twinkling nightscapes captivate guests.
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Amenities = () => {
                   </h3>
                 </div>
                 <p className="fs-7 text-start">
-                Travel over Hatimi Retreats' through our comprehensive guidelines on our website. Dive into our blogs to virtually experience the essence of Hatimi Retreats. Study the complete guide and book your stay now to bring the experience to life!
+                Travel over Hatimi Retreats' through our comprehensive guidelines on our website. Dive into virtual experiences via blogs,& book your stay to bring the experience to life!
                 </p>
               </div>
             </div>

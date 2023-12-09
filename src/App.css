@@ -33,6 +33,21 @@ body {
 .bg-chocolate{
   background-color: #1E2324;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* Popups */
+.modal-content {
+  background-color: #1E2324 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+.modal-header{
+  border-bottom: none !important;
+}
+
 .navbar-toggler {
   border: none;
   outline: none;
@@ -98,6 +113,9 @@ span {
 }
 .fs-7 {
   font-size: 14px;
+}
+.fs-8{
+  font-size: 12px;
 }
 
 .text-gold {
@@ -283,7 +301,11 @@ span {
 .daterangepicker{
 background-color: #071011!important;
 border:1px solid #3a3e3e !important;
+position: relative;
+
 }
+
+
 .calendar-table {
   border: 1px solid #071011 !important;
   border-radius: 4px;
@@ -329,6 +351,16 @@ background-color: #B08E54 !important;
 }
 .daterangepicker .drp-buttons {
   border-top: 1px solid #3a3e3e !important;
+}
+.daterangepicker .calendar-table .next:hover{
+background-color: #B08E54;
+}
+.daterangepicker .calendar-table .prev:hover{
+  background-color: #B08E54;
+  }
+.applyBtn{
+  background-color: #B08E54 !important;
+  border: none !important;
 }
 
 .max-members {
@@ -499,6 +531,10 @@ padding-bottom: 7rem;
 .bookings {
   position: "relative";
 }
+.topline{
+  border-top: 1px solid #282B2B;
+  margin-top: 3rem;
+}
 .panel-body {
   background-color: #1e2526;
 }
@@ -516,7 +552,7 @@ padding-bottom: 7rem;
   border: 1px solid #282B2B;
   border-radius: 15px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .bookingprice{
   position: relative;
@@ -674,6 +710,11 @@ padding-bottom: 7rem;
   margin-left: 6rem;
   margin-right: 6rem;
   width: 88%;
+}
+.blog-author{
+  border-bottom: 1px solid #1E2324;
+  border-top: 1px solid #1E2324;
+  padding: 10px;
 }
 
 /* Services */

@@ -15,7 +15,7 @@ const Events = () => {
     {
       id: 2,
       heading:
-        "HOST A WEDDING ",
+        "PLAN A WEDDING  ",
         tagline:" Hatimi Retreats: The place of Fairytale Weddings", 
       description:
         'Celebrate an elegant and cost-effective destination wedding at Hatimi Retreats, where our team guarantees a smooth and spectacular experience. Imagine the warmth of our team and the grandeur of our rooms welcoming your guests. ',
@@ -24,7 +24,7 @@ const Events = () => {
     {
       id: 3,
       heading:
-        "PLAN AN EVENT",
+        "HOST AN EVENT",
         tagline:"Cherish Memorable Events at Hatimi Retreats. ", 
       description:
         'Hatimi Retreats offers budget-friendly packages, luxurious accommodations, and an appealing environment. Our vast rooms cater to intimate gatherings and larger celebrations, while our multi-purpose function hall is perfect for grand events.  ',
@@ -50,9 +50,9 @@ const Events = () => {
   <Event_Searchbar/>
   </div>
       {/* Cards */}
-      <div className="container my-5 pb-5 ">
+      <div className="container mb-5 pb-5 ">
         {EventData.map((service) => (
-          <div key={service.id} className="row text-white my-5 py-5 gap-3">
+          <div key={service.id} className="row text-white mb-5 pb-5 gap-3">
             {(service.id % 2 === 1) ? (
               <>
                 <div className="col-md-6">

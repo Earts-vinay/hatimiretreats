@@ -5,12 +5,13 @@ import moment from "moment";
 import "bootstrap-daterangepicker/daterangepicker.css";
 import { DateRangePicker } from "react-bootstrap-daterangepicker";
 import { NavLink } from "react-router-dom";
+import "bootstrap/js/dist/dropdown";
 
 function SearchBar(props) {
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [destination, setDestination] = useState(null);
-  const [destinationOpen, setDestinationOpen] = useState(false);
+
   const destinationOptions = [
     { value: "Matheran", label: "Matheran" },
     { value: "Lonavala", label: "Lonavala" },
@@ -18,10 +19,6 @@ function SearchBar(props) {
     { value: "Mount Abu", label: "Mount Abu" },
     { value: "Dummas", label: "Dummas" },
   ];
-  const handleDestinationChange = (selectedOption) => {
-    setDestination(selectedOption);
-    setDestinationOpen(false); // Close the dropdown after selecting an option
-  };
 
   // Rooms
   const [roomCount, setRoomCount] = useState(0);
@@ -66,6 +63,9 @@ function SearchBar(props) {
   };
   const formattedDate = (date) => {
     return date ? moment(date).format("ddd Do MMM") : "Select Date";
+  };
+  const handleDestinationChange = (selectedOption) => {
+    setDestination(selectedOption);
   };
 
   // Guests
@@ -112,12 +112,13 @@ function SearchBar(props) {
         <div className="multi-main-search searchbarborder py-5 row d-flex justify-content-between align-items-center searchbar-mobile">
           {/* Destination */}
           <div className="col-lg-2 broder-right p-0 text-center">
-            <div className="dropdown gap-2" onClick={() => setDestinationOpen(!destinationOpen)}>
+            <div className="dropdown gap-2 ">
               <button
-                className="btn btn-outline-darkgreen text-white destination_box px-0 py-3 border-0"
+                className="btn btn-outline-darkgreen text-white destination_box px-0 py-3 border-0 "
                 type="button"
                 id="destinationDropdown"
-                aria-expanded={destinationOpen ? "true" : "false"}
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 {destination ? destination.label : "Search Destination"}
                 <img
@@ -126,14 +127,15 @@ function SearchBar(props) {
                   alt="image"
                 />
               </button>
+
               <ul
-                className={`dropdown-menu darkgreen text-white dropdown_border ${destinationOpen ? "show" : ""}`}
+                className="dropdown-menu darkgreen text-white dropdown_border"
                 aria-labelledby="destinationDropdown"
               >
                 {destinationOptions.map((option) => (
                   <li key={option.value}>
                     <button
-                      className="dropdown-item drop-down-li text-white px-5 mx-2"
+                      className="dropdown-item drop-down-li text-white px-5 mx-2 bg-transparent"
                       onClick={() => handleDestinationChange(option)}
                     >
                       {option.label}
@@ -151,10 +153,11 @@ function SearchBar(props) {
               <DateRangePicker onApply={handleDateSelect}>
                 <div className="search-box-single d-flex align-items-center  gap-2">
                   <div className="d-flex flex-column justify-content-center align-items-center w-75 ">
+                    
                     <p className="m-0 mx-2 text-white fs-6">Check in</p>
                     <input
                       type="text"
-                      className="form-searchbar text-center custom-date-picker border-0"
+                      className="form-searchbar text-center custom-date-picker"
                       value={
                         dateRange.startDate
                           ? formattedDate(dateRange.startDate)
@@ -174,7 +177,7 @@ function SearchBar(props) {
           </div>
           <div className="col-lg-2 broder-right px-1">
             <div className="search-box-single d-flex justify-content-center align-items-center  fs-4 ">
-              <DateRangePicker onApply={handleDateSelect}>
+              <DateRangePicker onApply={handleDateSelect} className="border-0">
                 <div className="search-box-single d-flex align-items-center  gap-2">
                   <div className="d-flex flex-column justify-content-center align-items-center w-75">
                     <p className="m-0  mx-2 text-white fs-6">Check out</p>
@@ -203,7 +206,7 @@ function SearchBar(props) {
           <div className="col-lg-2 broder-right text-white d-flex justify-content-center align-items-center gap-2 px-0">
             <div className="dropdown" ref={roomDropdownRef}>
               <button
-                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-3 border-0 "
+                className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center gap-3 border-0"
                 type="button"
                 id="roomDropdown"
                 data-bs-toggle="dropdown"
@@ -261,7 +264,7 @@ function SearchBar(props) {
             <div className="col d-flex justify-content-center align-items-center px-0">
               <div className="dropdown text-white" ref={dropdownRef}>
                 <button
-                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0 gap-3 border-0 "
+                  className="btn btn-outline-darkgreen d-flex justify-content-center align-items-center  px-0  border-0"
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"

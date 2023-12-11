@@ -378,6 +378,9 @@ background-color: #B08E54;
 .calendar-icon {
   color: #b69b6c;
 }
+.event-calendar-icon{
+  width: 25px;
+}
 .btn {
   background-color: transparent;
 }
@@ -490,7 +493,6 @@ background-color: #B08E54;
   width: 25rem;
   overflow: hidden;
 }
-
 
 
 .awesome-image{
@@ -722,6 +724,12 @@ padding-bottom: 7rem;
   padding-top: .5rem;
   margin-left: 3rem;
   padding-left: 3rem;
+}
+
+/* Events */
+.event-searchbar-section{
+  position: relative;
+  top: -13rem;
 }
 
 /* Contact Us */

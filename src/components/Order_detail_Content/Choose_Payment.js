@@ -33,33 +33,8 @@ const ChoosePayment = () => {
       <div className="row ">
        
         <div className="col-md-4 p-3 ">
-          <div className="py-4">
-        <ButtonGroup>
-        <Button
-          style={{
-            backgroundColor: selectedOption === 'payAtHotel' ? '#B69B6C' : '',
-            color: selectedOption === 'payAtHotel' ? '#fff' : '',
-            borderColor:'#2D3232'
-          }}
-          className="hover-red" 
-          onClick={() => handleButtonClick('payAtHotel')}
-        >
-          Pay at Hotel
-        </Button>
-        <Button
-          style={{
-            backgroundColor: selectedOption === 'payNow' ? '#B69B6C' : '',
-            color: selectedOption === 'payNow' ? '#fff' : '',
-            borderColor:'#2D3232'
-          }}
-          className="hover-red" 
-          onClick={() => handleButtonClick('payNow')}
-        >
-          Pay Now
-        </Button>
-      </ButtonGroup>
-      </div>
-          <form className="d-flex flex-column gap-3">
+         
+          <form className="d-flex flex-column gap-3 my-5">
             <div className="form-check ">
               <input
                 className="form-check-input"

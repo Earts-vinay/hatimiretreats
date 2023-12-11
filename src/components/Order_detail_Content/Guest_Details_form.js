@@ -46,17 +46,6 @@ const Guest_Details_form = () => {
          />
        </div>
        <div className="mb-3">
-         <label htmlFor="gstInput" className="form-label text-white">GST Number</label>
-         <input
-           type="text"
-           className="form-control bg-transparent  payment_form"
-           id="gstInput"
-           value={gstNumber}
-           onChange={(e) => setGstNumber(e.target.value)}
-           required
-         />
-       </div>
-       <div className="mb-3">
          <label htmlFor="companyInput" className="form-label text-white">Company Name</label>
          <input
            type="text"
@@ -67,6 +56,18 @@ const Guest_Details_form = () => {
            required
          />
        </div>
+       <div className="mb-3">
+         <label htmlFor="gstInput" className="form-label text-white">GST Number</label>
+         <input
+           type="text"
+           className="form-control bg-transparent  payment_form"
+           id="gstInput"
+           value={gstNumber}
+           onChange={(e) => setGstNumber(e.target.value)}
+           required
+         />
+       </div>
+      
      </form>
     </div>
   )

@@ -36,11 +36,11 @@ const Bookinginfo = () => {
 
               <div className="row text-white pt-4 d-flex justify-content-center">
                   <div className="checkin  col-3 border-right text-center">
-                    <p >Check in</p>
+                    <p className='text-start px-4'>Check in</p>
                     <p >Wed 8th Nov</p>
                   </div>
                   <div className="checkout  col-3 border-right text-center">
-                      <p >Check out</p>
+                      <p className='text-start px-4' >Check out</p>
                       <p >Sun 12th Nov</p>
                   </div>
                   <div className="rooms col-3 border-right text-center">

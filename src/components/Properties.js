@@ -10,13 +10,15 @@ import {
   FaWifi,
   FaSun,
   FaStar,
+  FaArrowRight,
 } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot,FaArrowRightLong } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import Other_Rooms from "./Product_Detail_content/Other_Rooms";
-import { Tooltip } from "bootstrap";
+import Attractions from "./Properties_Content/Attractions";
+import About_Properties from "./Properties_Content/About_Properties";
 
-const Bookings = () => {
+const Properties = () => {
   const amenityIcons = {
     Kitchen: FaUtensils,
     "Air Conditioner": FaSnowflake,
@@ -36,9 +38,9 @@ const Bookings = () => {
   const products = [
     {
       id: 1,
-      name: "Misk Presidential Suite",
-      location: "Maimoon villa ",
-      description: "2 Adults with a max capacity of 6 ",
+      name: "Maimoon Villa",
+      location: "Matheran ",
+      description: "Max capacity of 6  ",
       dimension: "99mx99m | Area :  7000 sq.ft | Height : 3m",
       amenities: [
         "Kitchen",
@@ -49,15 +51,15 @@ const Bookings = () => {
         "Balcony or Patio",
       ],
       tags: ["#Lorem Ipsum", "#Lorem Ipsum"],
-      image: "assets/bookingimg.png",
+      image: "assets/property1.png",
       price: "Rs 6500/N",
     },
 
     {
       id: 2,
-      name: "Oud Executive Suite",
-      location: "Maimoon villa",
-      description: "2 Adults with a max capacity of 4 ",
+      name: "Burhani Villa",
+      location: "Matheran",
+      description: "Max capacity of 6  ",
       rating: "4.6  ( 29 ratings ) Excellent",
       dimension: "99mx99m | Area :  7000 sq.ft | Height : 3m",
       amenities: [
@@ -69,11 +71,12 @@ const Bookings = () => {
         "Balcony or Patio",
       ],
       tags: ["#Lorem Ipsum", "#Lorem Ipsum"],
-      image: "assets/bookingimg.png",
+      image: "assets/property3.png",
       price: "Rs 6500/N",
     },
     // Add more products here if needed
   ];
+
   return (
     <>
       <div className="my-3 mx-5 px-5 mobileresponsive">
@@ -86,10 +89,8 @@ const Bookings = () => {
               <section className="panel my-5 mx-5 mobileresponsive px-5">
                 <div className="panel-body row p-3 rounded">
                   <div className="col-md-4">
-                    <div className="pro-img-details px-3 ">
-                      <p className="text-white m-0 dark p-1 d-flex justify-content-center bookingprice">
-                        {product.price}
-                      </p>
+                    <div className="mt-3 px-3 ">
+                      
                       <img
                         src={product.image}
                         className="w-100 rounded"
@@ -168,10 +169,9 @@ const Bookings = () => {
                     </div>
 
                     <p className="text-white d-flex align-items-center mb-1 ">
-                      <p className="m-0"> {product.location}</p>{" "}
-                      <p className="px-2 d-flex align-items-center m-0">
-                        {<FaLocationDot className="pe-1"/>} Matheran
-                      </p>
+                      <p className="m-0 d-flex align-items-center">
+                        {<FaLocationDot className="pe-1"/>} {product.location}
+                      </p>{" "}
                     </p>
                     <div className="product_meta row">
                       <div className="col-6 text-white ">
@@ -248,20 +248,10 @@ const Bookings = () => {
                     </div>
                   </div>
                   <div className="topline mt-0"></div>
-                  <div className="gap-3 d-flex justify-content-center mt-4">
-                    <button
-                      className="btn btn-round btn-light text-white"
-                      type="button"
-                    >
-                      <NavLink className="nav-link" to="/productdetail">
-                        View Details
-                      </NavLink>
-                    </button>
+                  <div className="gap-3 d-flex justify-content-center align-items-center mt-4">
                     <button className="eg-btn btn btn-searchbar ">
-                      {" "}
-                      <NavLink className="nav-link" to="/orderdetail">
-                        {" "}
-                        Book Now
+                      <NavLink className="nav-link" to="/bookings">
+                        View Rooms { " "} <FaArrowRightLong className="ps-2 fs-4" />
                       </NavLink>
                     </button>
                   </div>
@@ -270,14 +260,15 @@ const Bookings = () => {
             </div>
           ))}
         </div>
-
-        {/* other Rooms */}
+        <About_Properties/>
+        {/* Attractions */}
         <div className="container">
-          <Other_Rooms />
+           
+          <Attractions />
         </div>
       </div>
     </>
   );
 };
 
-export default Bookings;
+export default Properties;

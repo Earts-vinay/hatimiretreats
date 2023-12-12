@@ -22,7 +22,7 @@ const ImageChanger = () => {
       <div className=" p-0">
         {selectedImage && (
           <div className="p-0">
-            <img src={selectedImage} alt="Selected" className="w-100 h-100" />
+            <img loading="lazy" src={selectedImage} alt="Selected" className="w-100 h-100" />
           </div>
         )}
         {/* Content area to display the selected image */}

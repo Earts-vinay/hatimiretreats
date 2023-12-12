@@ -276,7 +276,7 @@ function SearchBar(props) {
                   </div>
                   <img
                     src="assets/bg/guest.svg"
-                    className="img-fluid h-50"
+                    className="img-fluid h-50 ps-3"
                     alt="image"
                   />
                 </button>
@@ -321,9 +321,9 @@ function SearchBar(props) {
               props.check === "home" ? "col-lg-1" : "col-lg-2"
             }`}
           >
-            <div className="main-form-submit ">
+            <div className="main-form-submit pe-2">
               <button className="eg-btn btn btn-searchbar ">
-                <NavLink className="nav-link" to="/bookings">
+                <NavLink className="nav-link" to="/properties">
                   {props.check === "home" ? "Search" : "Update Search"}
                 </NavLink>
               </button>

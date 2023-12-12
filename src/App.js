@@ -21,6 +21,7 @@ import Events from "./components/Events";
 import Daypass from "./components/Daypass";
 import Faqs from "./components/Faqs";
 import Blog_detail from "./components/Blog_detail";
+import Properties from "./components/Properties";
 const App = () => {
   return (
     <>
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/blogdetail" element={<Blog_detail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bookings" element={<Bookings />} />
+        <Route path="/properties" element={<Properties />} />
         <Route path="/productdetail" element={<Product_detail />} />
         <Route path="/orderdetail" element={<Order_detail />} />
       </Routes>

@@ -117,6 +117,9 @@ span {
 .fs-8{
   font-size: 12px;
 }
+.fs-special {
+  font-size: 3.5rem;
+}
 
 .text-gold {
   color: #B08E54;

@@ -78,6 +78,7 @@ const Events = () => {
                 </div>
                 <div className="col-md-5">
                   <img
+                  loading="lazy"
                     className="d-block w-100 rounded px-5"
                     src={service.imageUrls}
                     alt={`Service ${service.id} - Image`}
@@ -88,6 +89,7 @@ const Events = () => {
               <>
                 <div className="col-md-5">
                   <img
+                  loading="lazy"
                     className="d-block w-100 rounded mx-5 px-5"
                     src={service.imageUrls}
                     alt={`Service ${service.id} - Image`}

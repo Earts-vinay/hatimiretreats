@@ -135,7 +135,7 @@ const ChoosePayment = () => {
              
              {paymentMode === 'upi' && (
                 <div>
-                  <p>Enter UPI</p>
+                
                   {/* UPI input field */}
                   <div className="form-group">
                     <label htmlFor="upi">Enter UPI</label>

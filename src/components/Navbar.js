@@ -104,9 +104,45 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item align-items-center d-flex justify-content-center ">
-              <FaRegUserCircle className='fs-3 text-white '/>
+            {/* Dropdown for user icon */}
+        <div className="dropdown">
+          <button
+            className="btn btn-secondary border-0 bg-transparent"
+            type="button"
+            id="userDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <FaRegUserCircle className='fs-3 text-white'/>
+          </button>
+          <ul className="dropdown-menu darkgreen dropdown_border text-white" aria-labelledby="userDropdown">
+            <li>
+              <NavLink className="dropdown-item drop-down-li text-white bg-transparent" to="/mybookings">
+                My Bookings
+              </NavLink>
             </li>
+            <li>
+              <NavLink className="dropdown-item drop-down-li text-white bg-transparent" to="/myprofile">
+                My Profile
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item drop-down-li text-white bg-transparent" to="/help">
+                Help
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item drop-down-li text-white bg-transparent" to="/aboutus">
+                About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item drop-down-li text-white bg-transparent" to="/logout">
+                Logout
+              </NavLink>
+            </li>
+          </ul>
+        </div>
           </ul>
         </div>
       </div>

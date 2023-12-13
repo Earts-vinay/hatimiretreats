@@ -158,6 +158,14 @@ span {
   background-color: #292c2c;
 }
 
+option{
+  background-color: #1E2324 !important;
+  color: white;
+}
+option:hover{
+  background-color: #B08E54 !important;
+}
+
 /* Buttons */
 
 .btn-outline-login {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import '../../App.css';
 const Guest_Details_form = () => {
       // State for registration form inputs
   const [name, setName] = useState('');
@@ -46,15 +46,15 @@ const Guest_Details_form = () => {
       <label htmlFor="mobileInput" className="form-label text-white">
         Mobile Number
       </label>
-      <div className="input-group text-white">
+      <div className="input-group text-white bg-transparent">
         <div className="input-group-prepend">
           <select
             className="form-select bg-transparent text-white payment_form border-right-0"
             value={selectedCountryCode}
             onChange={handleCountryCodeChange}
           >
-            <option value="91">+91</option>
-            <option value="01">+01</option>
+            <option value="91" className="">+91</option>
+            <option value="01" className="">+01</option>
             {/* Add more country codes as needed */}
           </select>
         </div>

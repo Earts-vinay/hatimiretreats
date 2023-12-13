@@ -145,12 +145,12 @@ function Event_Searchbar(props) {
               <p className="m-0 mx-2 text-white fs-6 text-start">Date</p>
             <div className="dropdown gap-2">
             
-              <div className="input-group flex-nowrap w-100">
+              <div className="input-group flex-nowrap w-100 text-white">
                 <DatePicker
                   selected={selectedDate}
                   onChange={handleDateChange}
                   placeholderText="DD-MM-YY"
-                  className="form-searchbar text-center border-0 w-100"
+                  className="form-searchbar text-center border-0 w-100 text-white"
                   value={selectedDate ? formatDate(selectedDate) : ""}
                 />
                
